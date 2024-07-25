@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Clothing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julee&family=Macondo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  .work{
+  flex-direction: row;
+}
+.color {
+  width: 94%;
+  display: flex;
+  
+  float: left;
+  flex-wrap: wrap;
+  background-color: #384133;
+}
+#ohana{
+  background-color: white;
+  width: 80px;
+  height: 90px;
+  float: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  border-radius: 0px 0px 0px 20px;
+  border: 2px solid;
+
+
+}
+#pine {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border:none;
+}
+
+.primary {
+  background-color: #C3E2B4;
+  width: 80%;
+  border-radius: 10px 0px 10px 0px;
+  border: 5px double #82A075;
+}
+h1 {
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Grandstander", cursive;
+
+}
+p {
+    font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+
+}
+.center {
+   font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+  background-color: #ECF5E8;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background: #404040;  */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+    
+}
+img {
+  border: 3px double; #5D6858;
+  border-radius: 15px 0 15px 0;
+}
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
+
+
+}
+/*.title {
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}
+.title h1{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    padding: 10px;
+    margin-right: auto;
+}
+.title p{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 80%;
+  margin-left: 8%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}*/
+#wbg {
+  background-color: #384133;
+}
+.mar {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<button class="w3-button w3-large" style="position: absolute; top: 0; left: 0;" onclick="w3_open()">&#9776;</button>
+<div class="work"style="margin-left:3%">
+<div class="w3-container">
+<a href=""><img src="img/turtle.jpg" style="margin-right: 3px;" id="ohana"></a>
+<div class="color" >
+  
+  <div class="w3-bar w3-black " id="wbg" >
+      
+
+      <a href="index.html" class="w3-bar-item w3-button"><img src="img/pine.jpg" id="pine"></a>
+    <a href="culture.html" class="w3-bar-item w3-button">Culture</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Islands <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="islandofhawaii.html" class="w3-bar-item w3-button">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button">Maui</a>
+        <a href="#" class="w3-bar-item w3-button">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" id="mySidebar" style="width:20%; display: none;">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  <a href="culture.html" class="w3-bar-item w3-button">Culture</a> 
+  <button class="w3-bar-item w3-button" onclick="toggleDropdown()">Hawaiian Culture
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="dropdown" class="w3-bar-block" style="display:none">
+    <a href="history.html" class="w3-bar-item w3-button">A Glimpse into History</a>
+    <a href="language.html" class="w3-bar-item w3-button">Language: The Heartbeat of Culture</a>
+    <a href="spirit.html" class="w3-bar-item w3-button">Spitirual Beliefs and Practices</a>
+    <a href="hula.html" class="w3-bar-item w3-button">The Art of Hula</a>
+    <a href="soul.html" class="w3-bar-item w3-button">Music: The Soul of the Islands</a>
+    <a href="taste.html" class="w3-bar-item w3-button">Taste of Hawaii</a>
+    <a href="festivals.html" class="w3-bar-item w3-button">Festivals</a>
+    <a href="clothing.html" class="w3-bar-item w3-button">Clothing</a>
+    <a href="core.html" class="w3-bar-item w3-button">Core Values and the Way of Life</a>
+    
+  </div>
+  
+</div>
+
+<div style="margin-left:10%">
+
+<div class="w3-container primary">
+<h1> Clothing and Adornments</h1>
+<p class="mar"style="margin-left:10%;">---------</p>
+
+<p class="center">
+
+
+
+Traditional Hawaiian attire is crafted from natural materials, with men wearing malo <i>(loincloths)</i> and women donning paʻu <i>(skirts)</i>.<br><br> Both men and women adorned themselves with lei, beautiful garlands made from flowers, leaves, shells, or feathers.
+In modern times, the aloha shirt and muʻumuʻu have become iconic symbols of Hawaiian fashion, embodying the islands' relaxed and tropical lifestyle.
+<br><br>
+Hawaiian clothing and adornments are deeply intertwined with the islands' cultural heritage and traditions. They reflect a blend of ancient practices and modern influences, with a strong emphasis on natural materials, vibrant colors, and symbolic meanings. 
+<br>
+
+<p class="mar" style="margin-left:10%;">---------</p>
+</p>
+
+<br><br>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("dropdown");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+</script>
+
+      <div class="w3-container title">
+  <h1 > Traditional Clothing</h1>
+  <p>
+<br><strong><i>Kapu‘a (Tapa Cloth)</i></strong>
+<br><strong>Description:</strong> Tapa is a traditional fabric made from the bark of the ʻulu <i>(breadfruit)</i> tree or kapa <i>(a type of cloth made from the bark of the wauke tree)</i>. It was used to make garments, wraps, and ceremonial clothing.
+<br><strong>Appearance:</strong> Often decorated with intricate patterns and designs, kapa cloth is both functional and symbolic, reflecting the wearer’s status and cultural identity.
+<br><strong><i> Malo</i></strong>
+<br><strong>Description:</strong> The malo is a traditional loincloth worn by men. It is a simple garment wrapped around the waist and tied in place, often made from kapa or woven fabric.
+<br><strong>Usage:</strong> Traditionally worn by Hawaiian men, the malo is often seen in historical contexts and ceremonial occasions.
+<br><strong><i>Paʻu</i></strong>
+<br><strong>Description:</strong> The paʻu is a traditional skirt worn by women, typically made from kapa or woven fabric. It is worn as a wrap-around garment.
+<br><strong>Significance:</strong> The paʻu is often adorned with decorative elements and is an important part of traditional hula attire.
+<br><strong><i>Aloha Shirt</i></strong>
+<br><strong>Description:</strong> The aloha shirt, also known as the Hawaiian shirt, is a colorful, short-sleeved shirt made from lightweight fabric, often featuring floral or tropical patterns.
+<br><strong>Origins:</strong> Popularized in the early 20th century, it has become a symbol of casual Hawaiian style and is worn by both locals and visitors.
+ <br><strong><i>Hula Attire</i></strong>
+<br><strong>Description:</strong> Hula dancers wear traditional garments that vary by style. Women typically wear paʻu skirts or holoku <i>(formal dresses)</i> adorned with flowers and leis, while men may wear malo or kāne <i>(a type of traditional wrap)</i>.
+<br><strong>Accessories: </strong>Hula attire often includes floral crowns, lei, and other adornments that complement the dance and the story being told.
+<br>
+<br><strong>Adornments</strong>
+<br><br><strong><i>Lei</i></strong>
+<br><strong>Description:</strong> A lei is a garland or necklace made from flowers, leaves, shells, or feathers. It is a symbol of affection, celebration, and respect.<br>
+<br><strong>Types:</strong>
+<br><strong>Flower Lei:</strong> Made from a variety of tropical flowers, such as plumeria or orchids.
+<br><strong>Shell Lei:</strong> Crafted from seashells strung together.
+<br><strong>Feather Lei:</strong> Traditionally made from bird feathers and used in ceremonial contexts.
+<br><br><strong><i>Pāʻū (Lei)</i></strong>
+<br><strong>Description:</strong> In addition to flower leis, pāʻū can also refer to traditional Hawaiian wraps or skirts worn during ceremonies. These are often made from fine fabrics and adorned with intricate patterns.
+<br><br><strong><i>Haku Lei</i></strong>
+<br><strong>Description:</strong> A type of lei made from woven flower petals, leaves, or a combination of natural materials. It is worn as a crown or headpiece, particularly during ceremonial events and hula performances.
+<br><strong>Significance:</strong> Haku leis are highly valued for their craftsmanship and are worn to signify special occasions or honor guests.
+<br><br><strong><i>Kukui Nut Jewelry</i></strong>
+<br><strong>Description: </strong>Jewelry made from kukui nuts, often polished and strung into necklaces, bracelets, or earrings.
+<br><strong>Cultural Significance:</strong> The kukui nut symbolizes enlightenment and protection and is traditionally used in Hawaiian adornments.
+<br><br><strong><i> Makau</i></strong>
+<br><strong>Description:</strong> Traditional Hawaiian fishhooks, often made from bone, wood, or stone, and used as both functional tools and decorative jewelry.
+<br><strong>Symbolism: </strong>The makau represents strength, prosperity, and a deep connection to the ocean.
+<br><br><strong><i>Hei Manoa</i></strong>
+<br><strong>Description:</strong> Traditional Hawaiian feathered capes or cloaks, often worn by chiefs or high-ranking individuals.
+<br><strong>Significance:</strong> These adornments are made from feathers and are highly prized for their beauty and cultural significance.
+<br><br>
+</p>
+</div>
+</div>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://cf.ltkcdn.net/costumes/images/orig/217117-1600x1067-woman-wearing-hawaiian-costume.jpg" style="width:100%">
+  <img class="mySlides" src="https://i.pinimg.com/originals/c2/a5/b1/c2a5b16e9743dc20b41619988281773d.jpg" style="width:100%">
+  <img class="mySlides" src="https://i.ytimg.com/vi/qPP5ixKHNFA/maxresdefault.jpg" style="width:100%">
+  <img class="mySlides" src="https://miro.medium.com/v2/resize:fit:1400/1*RVM82OKFjyRQyfDeEID8mw.jpeg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+<br><br>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

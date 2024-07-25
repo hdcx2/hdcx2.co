@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music: The Soul of the Islands</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julee&family=Macondo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  .work{
+  flex-direction: row;
+}
+.color {
+  width: 94%;
+  display: flex;
+  
+  float: left;
+  flex-wrap: wrap;
+  background-color: #384133;
+}
+#ohana{
+  background-color: white;
+  width: 80px;
+  height: 90px;
+  float: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  border-radius: 0px 0px 0px 20px;
+  border: 2px solid;
+
+
+}
+#pine {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border:none;
+}
+
+.primary {
+  background-color: #C3E2B4;
+  width: 80%;
+  border-radius: 10px 0px 10px 0px;
+  border: 5px double #82A075;
+}
+h1 {
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Grandstander", cursive;
+
+}
+p {
+    font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+
+}
+.center {
+   font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+  background-color: #ECF5E8;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background: #404040;  */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+    
+}
+img {
+  border: 3px double; #5D6858;
+  border-radius: 15px 0 15px 0;
+}
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
+
+
+}
+/*.title {
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}
+.title h1{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    padding: 10px;
+    margin-right: auto;
+}
+.title p{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 80%;
+  margin-left: 8%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}*/
+#wbg {
+  background-color: #384133;
+}
+.mar {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<button class="w3-button w3-large" style="position: absolute; top: 0; left: 0;" onclick="w3_open()">&#9776;</button>
+<div class="work"style="margin-left:3%">
+<div class="w3-container">
+<a href=""><img src="img/turtle.jpg" style="margin-right: 3px;" id="ohana"></a>
+<div class="color" >
+  
+  <div class="w3-bar w3-black " id="wbg" >
+      
+
+      <a href="index.html" class="w3-bar-item w3-button"><img src="img/pine.jpg" id="pine"></a>
+    <a href="culture.html" class="w3-bar-item w3-button">Culture</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Islands <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="islandofhawaii.html" class="w3-bar-item w3-button">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button">Maui</a>
+        <a href="#" class="w3-bar-item w3-button">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" id="mySidebar" style="width:20%; display: none;">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  <a href="culture.html" class="w3-bar-item w3-button">Culture</a> 
+  <button class="w3-bar-item w3-button" onclick="toggleDropdown()">Hawaiian Culture
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="dropdown" class="w3-bar-block" style="display:none">
+    <a href="history.html" class="w3-bar-item w3-button">A Glimpse into History</a>
+    <a href="language.html" class="w3-bar-item w3-button">Language: The Heartbeat of Culture</a>
+    <a href="spirit.html" class="w3-bar-item w3-button">Spitirual Beliefs and Practices</a>
+    <a href="hula.html" class="w3-bar-item w3-button">The Art of Hula</a>
+    <a href="soul.html" class="w3-bar-item w3-button">Music: The Soul of the Islands</a>
+    <a href="taste.html" class="w3-bar-item w3-button">Taste of Hawaii</a>
+    <a href="festivals.html" class="w3-bar-item w3-button">Festivals</a>
+    <a href="clothing.html" class="w3-bar-item w3-button">Clothing</a>
+    <a href="core.html" class="w3-bar-item w3-button">Core Values and the Way of Life</a>
+  </div>
+  
+</div>
+
+<div style="margin-left:10%">
+
+<div class="w3-container primary">
+<h1> Music: The Soul of the Islands</h1>
+<p class="mar"style="margin-left:10%;">---------</p>
+
+<p class="center">
+
+
+Music is woven into the fabric of Hawaiian life. Traditional Hawaiian music features instruments such as the pahu and nose flute, with chants that convey stories of gods, heroes, and love. <br><br>Over time, Hawaiian music has embraced influences from other cultures, giving rise to unique genres like Jawaiian, a blend of Hawaiian and reggae sounds.<br><br>
+The ukulele, with its cheerful and melodic tunes, has become synonymous with Hawaiian music. Imagine sitting on a beach, strumming a ukulele while watching the sunset—a quintessential Hawaiian experience that captures the islands' laid-back spirit.
+
+<br>
+
+<p class="mar" style="margin-left:10%;">---------</p>
+</p>
+
+<br><br>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("dropdown");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+</script>
+
+      <div class="w3-container title">
+  <h1 > Traditional Hawaiian Music</h1>
+  <p>
+<strong><i> Ancient Hawaiian Music</i></strong>
+<strong>Chanting <i>(Oli and Mele)</i></strong>: The oldest form of Hawaiian music, chanting was used to tell stories, praise gods, and preserve history. There are two primary types:
+<br><br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<strong>Oli: </strong>Unaccompanied chants performed by a soloist, often used for ceremonial purposes <br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>Mele:</strong> Songs or chants with rhythm, often accompanied by dance <i>(hula)</i>. <br>Mele can be further categorized into Mele Inoa <i>(name chants)</i>, Mele Pule <i>(prayers)</i>, and Mele Hula<i> (chants for hula)</i>.
+<br><strong>Instruments:</strong> Traditional Hawaiian music primarily uses percussion instruments to accompany chants. Key instruments include:<br><br>
+
+<strong>Ipu:</strong> A gourd drum used to provide rhythmic accompaniment.<br>
+<strong>Pahu:</strong> A sharkskin-covered drum played with the hands.<br>
+<strong>Uliuli: </strong>Feathered gourd rattles that add sound and visual elements to performances.
+<br><strong>Puʻili: </strong>Split bamboo sticks that create a rattling sound when struck together.<br>
+<strong><i>Hawaiian Hula Music</i></strong>
+<strong>Role of Hula:</strong> Hula and music are intricately linked, with the dance often used to interpret the lyrics and stories of the songs. The chants and melodies guide the movements of the dancers, making music a vital component of hula performances.
+<br><br><strong><i>Modern Hawaiian Music</i></strong>
+<br><br><strong><i>Influence of Western Music</i></strong><br>
+<strong>Introduction of New Instruments: </strong>The arrival of Western explorers and settlers in the 19th century brought new instruments like the guitar, ukulele, and steel guitar, which became integral to modern Hawaiian music.
+<br>
+<strong>Ukulele:</strong> A small, four-stringed instrument adapted from the Portuguese braguinha. The ukulele has become synonymous with Hawaiian music and is known for its cheerful and melodic sound.
+
+<strong>Slack-Key Guitar <i>(Kī Hō‘alu)</i>:</strong> This guitar style involves tuning the strings to create open chords, allowing for a distinctive, resonant sound. It is a key element of Hawaiian music, reflecting the islands' relaxed and melodic vibe.
+<br><br>
+<strong><i>Hapa Haole Music</i></strong><br>
+<strong>Definition:</strong> Hapa Haole music, meaning "half foreign," emerged in the early 20th century, blending Hawaiian themes with English lyrics and Western musical styles. It became popular in mainland America and helped introduce Hawaiian music to a global audience.
+<br>
+<strong>Characteristics:</strong> These songs often feature catchy melodies, English lyrics with Hawaiian phrases, and themes of romance, nature, and island life. Famous examples include "Tiny Bubbles" and "Blue Hawaii."
+<br>
+<strong><i>Contemporary Hawaiian Music</i></strong>
+<strong>Hawaiian Renaissance:</strong>The Hawaiian cultural renaissance of the 1970s revived interest in traditional Hawaiian music and language. Artists began to blend traditional elements with modern sounds, creating a fusion of styles.
+<br>
+<strong>Jawaiian Music:</strong> A blend of reggae and Hawaiian music, Jawaiian emerged in the late 20th century, reflecting Hawaii's multicultural influences. It features reggae rhythms, Hawaiian lyrics, and island themes.
+<br>
+<strong>Popular Artists:</strong> Notable contemporary Hawaiian musicians include Israel Kamakawiwo‘ole (famous for his medley "Somewhere Over the Rainbow/What a Wonderful World"), Keali‘i Reichel, and Jake Shimabukuro (known for his virtuosic ukulele playing).
+<br><br>
+<strong><i>Cultural Significance</i></strong><br>
+<strong>Preservation of Language and Culture:</strong> Hawaiian music is a crucial medium for preserving and promoting the Hawaiian language, culture, and values. Through lyrics and storytelling, musicians keep the traditions and history of Hawaii alive.<br>
+
+<strong>Expression of Identity:</strong> Music serves as a means for Hawaiians to express their cultural identity, pride, and connection to the land. It reflects the unique blend of influences that shape Hawaiian society.<br>
+
+<strong>Spiritual Connection:</strong> Traditional Hawaiian music often has spiritual and ceremonial significance, reinforcing connections to ancestors, the land, and the divine.
+<br><br>
+</p>
+</div>
+</div>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://luaus.org/wp-content/uploads/2020/05/traditional-hawaiian-instruments-scaled-1.jpeg" style="width:100%">
+  <img class="mySlides" src="https://lirp.cdn-website.com/eaeb2c75/dms3rep/multi/opt/how_to_dance_hawaiian_music-640w.jpg" style="width:100%">
+  <img class="mySlides" src="https://images.nationalgeographic.org/image/upload/v1652339662/videos/posters/hula.jpg" style="width:100%">
+  <img class="mySlides" src="https://koala.sh/api/image/v2-7c5fe-0r39w.jpg?width=1216&height=832&dream" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+<br><br>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

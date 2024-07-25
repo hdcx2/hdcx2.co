@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+	<style type="text/css">
+		
+		button {
+			margin-left:auto;
+			margin-right: auto;
+		}
+		.w3-bar {
+			margin-left:auto;
+			margin-right: auto;
+			align-items: center;
+			flex-wrap: wrap;
+			flex-direction: column;
+		}
+		.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer
+  }
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
+
+
+}
+
+.color {
+  width: 94%;
+  display: flex;
+  
+  float: left;
+  flex-wrap: wrap;
+}
+img {
+  border: 3px solid white;
+  border-radius: 15px 0 15px 0;
+}
+p {
+  background-color: lightgrey;
+  padding: 5px;
+  font-family: "Macondo", cursive;
+  width: 68%;
+  margin-right: auto;
+  margin-left: auto;
+}
+h2 {
+  background-color: #C3E2B4;
+  font-family: "Julee", cursive;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 15px 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h4 {
+  font-family: "Racing Sans One", sans-serif;
+  text-align: center;
+}
+body {
+  background-color: grey;
+  padding: 10px;
+}
+.f {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Racing Sans One", sans-serif;
+
+}
+.work{
+	flex-direction: row;
+}
+#ohana{
+	background-color: white;
+	width: 80px;
+	height: 90px;
+	float: left;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+#pine {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border:none;
+}
+iframe {
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  display: flex;
+  border: 2px solid rgb(209, 227, 228);
+  border-radius: 0 35px 0 35px;
+}
+.w3-bar-item {
+	margin-left: auto;
+	margin-right: auto;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+}
+/* Chatbox styles */
+.chatbox {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+	</style>
+
+</head>
+<body>
+
+	<div class="work">
+<div class="w3-container">
+<a href=""><img src="img/turtle.jpg" id="ohana"></a>
+<div class="color">
+	
+  <div class="w3-bar w3-black " >
+  		
+
+      <a href="hawai'i.html" class="w3-bar-item w3-button"><img src="img/pine.jpg" id="pine"></a>
+    <a href="culture.html" class="w3-bar-item w3-button">Culture</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Islands <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="islandofhawaii.html" class="w3-bar-item w3-button">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button">Maui</a>
+        <a href="#" class="w3-bar-item w3-button">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<div class="w3-container">
+  <h2>Culture</h2>
+  
+</div>
+  
+
+  <div class="w3-row">
+    <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Culture</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">A Glimpse into History</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Language:The Heartbeat of Culture</div>
+    </a><a href="javascript:void(0)" onclick="openCity(event, 'London');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Spiritual Beliefs and Practive</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">A Glimpse into History</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Language:The Heartbeat of Culture</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Culture</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">A Glimpse into History</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Language:The Heartbeat of Culture</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Culture</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">A Glimpse into History</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Language:The Heartbeat of Culture</div>
+    </a>
+  </div>
+
+  <div id="London" class="w3-container city" style="display:none">
+    <h4>Things to Do</h4>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Paris" class="w3-container city" style="display:none">
+    <h4>Food</h4>
+    <p>Paris is the capital of France.</p> 
+  </div>
+
+  <div id="Tokyo" class="w3-container city" style="display:none">
+    <h4>Sightseeing</h4>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <div id="London" class="w3-container city" style="display:none">
+    <h4>Things to Do</h4>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Paris" class="w3-container city" style="display:none">
+    <h4>Food</h4>
+    <p>Paris is the capital of France.</p> 
+  </div>
+
+  <div id="Tokyo" class="w3-container city" style="display:none">
+    <h4>Sightseeing</h4>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-black", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-black";
+}
+
+
+</script>
+
+<div class="chatbox">
+  <ul id="chat-log">
+    <!-- chat messages will be displayed here -->
+  </ul>
+  <div class="chat-input">
+    <button id="start-chat">Start Chat</button>
+  </div>
+</div>
+
+<script>
+  const chatLog = document.getElementById('chat-log');
+  const startChatBtn = document.getElementById('start-chat');
+
+  let conversation = [
+    {
+      role: 'assistant',
+      message: 'Hello! How can I assist you today?',
+    },
+    {
+      role: 'user',
+      message: 'Hi! I need help with my website.',
+    },
+    {
+      role: 'assistant',
+      message: 'What seems to be the issue with your website?',
+    },
+    // add more conversation lines here
+  ];
+
+  let currentConversationIndex = 0;
+
+  const generateChatMessage = (role, message) => {
+    const chatLi = document.createElement('li');
+    chatLi.classList.add('chat', role);
+    chatLi.innerHTML = `<p>${message}</p>`;
+    chatLog.appendChild(chatLi);
+    chatLog.scrollTo(0, chatLog.scrollHeight);
+  };
+
+  const startChat = () => {
+    conversation.forEach((line, index) => {
+      setTimeout(() => {
+        generateChatMessage(line.role, line.message);
+      }, index * 2000); // add a 2-second delay between messages
+    });
+  };
+
+  startChatBtn.addEventListener('click', startChat);
+</script>
+
+
+
+---<br><br>
+
+Hawaiian culture is a fascinating tapestry of traditions, stories, and practices that have evolved over centuries. Imagine setting foot on the beautiful islands of Hawaii, surrounded by the vibrant colors of nature, the sweet scent of plumeria, and the soothing sounds of the ocean.Rooted in Polynesian heritage, Hawaiian culture emphasizes **aloha** (love and compassion), **ʻohana** (family), and **mālama ʻāina** (stewardship of the land), fostering a profound sense of community and respect for nature. The **Hawaiian language** (ʻŌlelo Hawaiʻi) and practices such as **hula** dance and **mele** (song) serve as vital expressions of identity and history, celebrating the islands' unique stories and spirituality. Traditional values are embodied in the reverence for gods and goddesses like **Pele**, the fiery goddess of volcanoes, and **Kanaloa**, the god of the ocean. Contemporary Hawaiian culture continues to evolve, incorporating influences from diverse cultures while preserving its core traditions and values, creating a dynamic and inclusive society that honors its past while looking toward the future.<br><br>
+
+<strong>A Glimpse into History</strong>
+
+Hawaiian culture traces its roots back to the ancient Polynesians, who navigated the vast Pacific Ocean in double-hulled canoes about 1,500 years ago. These skilled voyagers brought with them plants, animals, and cultural practices that laid the foundation for what would become the unique Hawaiian way of life. Imagine their journey, guided by the stars and the waves, as they settled on the islands and created a society deeply connected to the land and sea.<br>
+
+In ancient Hawaiian society, there was a clear social structure. The aliʻi, or chiefs, were at the top, followed by the kahuna (priests), konohiki (skilled laborers), and makaʻāinana (commoners). The kapu system governed every aspect of life, from fishing and farming to relationships and religion. This system was more than just rules; it was a way to maintain balance and harmony within the community and the natural world.
+<br><br>------------------------------------------------------------------------<br><br>
+<strong>Language: The Heartbeat of Culture</strong><br>
+
+The Hawaiian language, known as ʻŌlelo Hawaiʻi, is more than just words; it's the heartbeat of Hawaiian culture. With only 13 letters, the language has a melodic and rhythmic quality that mirrors the islands' natural beauty. Phrases like **"aloha"** and **"mahalo"** carry meanings that go beyond simple greetings, reflecting the deep-seated values of love, respect, and gratitude.
+<br>
+In recent years, there has been a resurgence of interest in preserving the Hawaiian language, with immersion schools and media playing a significant role in its revival. Alongside ʻŌlelo Hawaiʻi, you'll also hear Hawaiian Pidgin, a creole language that evolved in the plantations and adds another layer to Hawaii's cultural mosaic.<br><br>
+------------------------------------------------------------------------<br><br>
+<strong><i>Spiritual Beliefs and Practices</i></strong>
+<br>
+Hawaiian spirituality is deeply intertwined with nature, emphasizing respect and reverence for the land, sea, and sky. The Hawaiian pantheon is rich with gods and goddesses, each representing different aspects of life. For instance:<br>
+
+<strong><i>Kāne</i></strong>: The god of creation and the sky, Kāne is a prominent deity who is associated with life-giving forces such as fresh water, sunlight, and the forests. He is often called upon in prayers for life and prosperity.
+<br><br>
+<strong><i>Kanaloa</i></strong>: As the god of the ocean and the underworld, Kanaloa is considered a counterpart to Kāne. He governs the seas and is often invoked for protection during voyages and fishing expeditions.
+<br><br>
+<strong><i>Lono</i></strong>: The god of agriculture, fertility, and peace, Lono is celebrated during the Makahiki festival, a time of feasting, sports, and the end of warfare. He is associated with rain and the growth of crops.
+<br><br>
+<strong><i>Ku</i></strong>: The god of war and strength, Kū is revered as the protector of warriors and a powerful deity in battles. He is also linked to agriculture, prosperity, and building, symbolizing the strength needed for these pursuits.
+<br><br>
+<strong><i>Pele</i></strong>: Perhaps the most famous goddess, Pele is the goddess of fire and volcanoes. Known for her temper and passion, she is both creator and destroyer, shaping the islands with her molten lava. Her presence is felt at Kīlauea, one of the world's most active volcanoes.
+<br><br>
+<strong><i>Hiʻiaka</i></strong>: The younger sister of Pele, Hiʻiaka is the goddess of hula and healing. She is often depicted as a kind and compassionate figure who protects travelers and aids in the growth of vegetation.
+<br><br>
+<strong><i>Hina</i></strong>: Often associated with the moon, Hina is a goddess of beauty, creativity, and femininity. Her stories are found in various legends, and she is revered for her wisdom and connection to the moon's cycles.
+<br><br>
+<strong><i>Kamohoaliʻi</i></strong>: The god of sharks and the ocean, Kamohoaliʻi is believed to protect sailors and guide canoes safely through treacherous waters.
+<br><br>
+<strong><i>Kamapuaʻa</i></strong>: A shape-shifting god associated with both the land and the sea, Kamapuaʻa often appears as a boar and is known for his mischievous adventures and battles with Pele.
+<br>
+These gods and goddesses play a central role in Hawaiian mythology, shaping the natural world and the lives of the people. Hawaiians believe in **mana**, a spiritual energy that flows through all things, from people to plants to places. This belief fosters a sense of connection and responsibility to care for the ʻāina (land), a concept known as **mālama ʻāina**.
+<br><br>------------------------------------------------------------------------<br><br>
+<strong>The Art of Hula</strong><br>
+
+One of the most captivating aspects of Hawaiian culture is hula, the traditional dance that tells stories through movement, chant (oli), and song (mele). Hula is more than just a dance; it’s a way to pass down history, legends, and values from generation to generation.
+<br>
+Imagine attending a hula performance, where dancers gracefully sway to the rhythm of traditional instruments like the pahu (drum) and ipu (gourd). There are two main types of hula: Hula Kahiko, the ancient form accompanied by chanting and percussion, and Hula ʻAuana, the modern style that incorporates Western influences and instruments like the ukulele.
+<br><br>------------------------------------------------------------------------<br><br>
+<strong>Music: The Soul of the Islands</strong>
+<br>
+Music is woven into the fabric of Hawaiian life. Traditional Hawaiian music features instruments such as the pahu and nose flute, with chants that convey stories of gods, heroes, and love. Over time, Hawaiian music has embraced influences from other cultures, giving rise to unique genres like Jawaiian, a blend of Hawaiian and reggae sounds.
+<br>
+The ukulele, with its cheerful and melodic tunes, has become synonymous with Hawaiian music. Imagine sitting on a beach, strumming a ukulele while watching the sunset—a quintessential Hawaiian experience that captures the islands' laid-back spirit.
+<br><br>------------------------------------------------------------------------<br><br>
+<strong>Taste of Hawaii: A Culinary Adventure</strong>
+<br>
+Hawaiian cuisine is a flavorful journey that reflects the islands' multicultural influences. Traditional foods like poi, made from taro root, and kalua pig, slow-cooked in an underground oven (imu), offer a taste of ancient Hawaii. 
+<br>
+The islands' culinary landscape has evolved to include dishes that blend flavors from various cultures. Picture yourself enjoying a bowl of poke, with fresh diced fish seasoned with soy sauce and seaweed, or indulging in a loco moco, a comforting dish of rice topped with a hamburger patty, fried egg, and gravy. And of course, there's the beloved Spam musubi, a snack that perfectly captures Hawaii's eclectic taste.
+<br><br>------------------------------------------------------------------------<br><br>
+<strong>Festivals and Celebrations</strong>
+<br>
+Hawaiian culture comes alive in its vibrant festivals and celebrations, which showcase the islands' rich traditions and community spirit. The Merrie Monarch Festival is a week-long celebration of hula and Hawaiian arts, honoring King David Kalākaua, who played a pivotal role in the cultural renaissance.
+<br>
+King Kamehameha Day, celebrated on June 11th, pays tribute to the great king who united the Hawaiian Islands. The festivities include floral parades, music, and cultural performances that reflect the pride and unity of the Hawaiian people.
+<br><br>------------------------------------------------------------------------<br><br>
+<strong>Clothing and Adornments</strong>
+<br>
+Traditional Hawaiian attire is crafted from natural materials, with men wearing malo (loincloths) and women donning paʻu (skirts). Both men and women adorned themselves with lei, beautiful garlands made from flowers, leaves, shells, or feathers.
+<br>
+In modern times, the aloha shirt and muʻumuʻu have become iconic symbols of Hawaiian fashion, embodying the islands' relaxed and tropical lifestyle.
+<br><br>------------------------------------------------------------------------<br><br>
+<strong>Core Values and Way of Life</strong>
+<br>
+At the heart of Hawaiian culture is the aloha spirit, a philosophy that emphasizes love, compassion, and respect for others. Aloha is more than a word; it's a way of life that fosters harmony and connection among people.
+<br>
+Family, or ʻohana, is another cornerstone of Hawaiian society. The concept of ʻohana extends beyond blood relations to include close friends and community members, highlighting the importance of support and loyalty.<br>
+
+Kuleana, meaning responsibility, reflects the Hawaiian commitment to caring for the land, community, and future generations. It's about recognizing one's role and taking action to protect and nurture what truly matters.
+<br><br> ------------------------------------------------------------------------<br><br>
+<strong>A Deep Connection to the Land</strong>
+
+The Hawaiian relationship with the ʻāina (land) is profound and sacred. The islands are seen as living entities that sustain life, and this connection inspires a strong sense of stewardship. The traditional ahupuaʻa system, which divided land into sections from mountain to sea, exemplified sustainable resource management and self-sufficiency.
+<br><br>------------------------------------------------------------------------<br><br>
+<strong>Modern Influences and Cultural Revival</strong>
+
+In the 1970s, the Hawaiian Renaissance ignited a cultural revival, sparking renewed interest in traditional practices, language, and arts. This movement continues today, with efforts to preserve and celebrate Hawaiian culture through education, community initiatives, and media.
+<br>
+Alongside cultural revival, there is an ongoing movement advocating for Hawaiian sovereignty and self-determination. This movement seeks to address historical injustices and preserve the islands' unique identity.
+
+<br><br>
+---
+
+Hawaiian culture is truly a testament to the
+
+ beauty and resilience of the islands and their people. From the mesmerizing dance of hula to the heartfelt spirit of aloha and the powerful myths of gods and goddesses, Hawaii offers a unique and enriching cultural experience that captivates the heart and soul.
+</body>
+</html>

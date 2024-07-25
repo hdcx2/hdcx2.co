@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Assistant Chat</title>
+  <style>
+    /* Add some basic styling to make the chat interface look decent */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .chat-container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .chat-log {
+      padding: 10px;
+      overflow-y: auto;
+      height: 300px;
+    }
+    .chat-input {
+      padding: 10px;
+      border-top: 1px solid #ccc;
+    }
+    #user-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+    }
+    #send-btn {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    #send-btn:hover {
+      background-color: #3e8e41;
+    }
+    .chat-message {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .chat-message:last-child {
+      border-bottom: none;
+    }
+    .chat-message.assistant {
+      background-color: #f0f0f0;
+      border-radius: 10px 10px 0 10px;
+      padding-left: 20px;
+    }
+    .chat-message.user {
+      background-color: #fff;
+      border-radius: 10px 10px 10px 0;
+      padding-right: 20px;
+    }
+    .chat-message p {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-log">
+      <!-- chat messages will be displayed here -->
+    </div>
+    <div class="chat-input">
+      <input id="user-input" type="text" placeholder="Type a message...">
+      <br>
+      <br>
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chatLog = document.querySelector('.chat-log');
+    const userInput = document.querySelector('#user-input');
+    const sendBtn = document.querySelector('#send-btn');
+
+    sendBtn.addEventListener('click', () => {
+      const userInputValue = userInput.value.trim();
+      if (userInputValue !== '') {
+        // Add user message to chat log
+        const userMessage = document.createElement('div');
+        userMessage.className = 'chat-message user';
+        userMessage.innerHTML = `<p>${userInputValue}</p>`;
+        chatLog.appendChild(userMessage);
+
+        // Get response from chatbot
+        const response = getResponse(userInputValue);
+
+        // Add chatbot response to chat log
+        const chatbotMessage = document.createElement('div');
+        chatbotMessage.className = 'chat-message assistant';
+        chatbotMessage.innerHTML = `<p>${response}</p>`;
+        chatLog.appendChild(chatbotMessage);
+
+        userInput.value = '';
+      }
+    });
+
+    function getResponse(userInput) {
+      const responses = {
+        'hello': 'Hi! How can I assist you today?',
+        'hi': 'Hello! What brings you here?',
+        'help': 'I\'d be happy to help you with any questions or issues you have.',
+        'default': 'I didn\'t understan, d that. Can you please rephrase? Or Please choose an Island: Island of Hawaiʻi, Maui, Kahoʻolawe, Lānaʻi, Molokaʻi, Oʻahu, Kauaʻi, or Niʻihau',
+        'me': 'Please contact (626)-223-0850',
+        'Island of Hawaiʻi': 'Please Choose a Region: Kona, Hilo, Hāmākua, Puna, Kaʻū, or Kohala'
+        
+        'Kona': 'Description: Known for its sunny weather, beautiful beaches, and coffee plantations. Kona is a major tourist hub and offers a range of activities from snorkeling and diving to exploring historic sites.'
+  'Kona' : 'Key Attractions:'
+  'Kona' :'Kona Coffee Farms: Tours and tastings of Kona’s world-famous coffee.'
+  'Kona' : 'Kailua-Kona: A historic town with shopping, dining, and cultural sites.'
+  'Kona' : 'Huliheʻe Palace: A former royal vacation home turned museum'
+      };
+
+      const userInputLowercase = userInput.toLowerCase();
+      for (const key in responses) {
+        if (userInputLowercase.includes(key)) {
+          return responses[key];
+        }
+      }
+      return responses['default'];
+    }
+  </script>
+</body>
+</html>

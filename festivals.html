@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Festivals and Celebrations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julee&family=Macondo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  .work{
+  flex-direction: row;
+}
+.color {
+  width: 94%;
+  display: flex;
+  
+  float: left;
+  flex-wrap: wrap;
+  background-color: #384133;
+}
+#ohana{
+  background-color: white;
+  width: 80px;
+  height: 90px;
+  float: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  border-radius: 0px 0px 0px 20px;
+  border: 2px solid;
+
+
+}
+#pine {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border:none;
+}
+
+.primary {
+  background-color: #C3E2B4;
+  width: 80%;
+  border-radius: 10px 0px 10px 0px;
+  border: 5px double #82A075;
+}
+h1 {
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Grandstander", cursive;
+
+}
+p {
+    font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+
+}
+.center {
+   font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+  background-color: #ECF5E8;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background: #404040;  */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+    
+}
+img {
+  border: 3px double; #5D6858;
+  border-radius: 15px 0 15px 0;
+}
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
+
+
+}
+/*.title {
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}
+.title h1{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    padding: 10px;
+    margin-right: auto;
+}
+.title p{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 80%;
+  margin-left: 8%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}*/
+#wbg {
+  background-color: #384133;
+}
+.mar {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<button class="w3-button w3-large" style="position: absolute; top: 0; left: 0;" onclick="w3_open()">&#9776;</button>
+<div class="work"style="margin-left:3%">
+<div class="w3-container">
+<a href=""><img src="img/turtle.jpg" style="margin-right: 3px;" id="ohana"></a>
+<div class="color" >
+  
+  <div class="w3-bar w3-black " id="wbg" >
+      
+
+      <a href="index.html" class="w3-bar-item w3-button"><img src="img/pine.jpg" id="pine"></a>
+    <a href="culture.html" class="w3-bar-item w3-button">Culture</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Islands <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="islandofhawaii.html" class="w3-bar-item w3-button">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button">Maui</a>
+        <a href="#" class="w3-bar-item w3-button">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" id="mySidebar" style="width:20%; display: none;">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  <a href="culture.html" class="w3-bar-item w3-button">Culture</a> 
+  <button class="w3-bar-item w3-button" onclick="toggleDropdown()">Hawaiian Culture
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="dropdown" class="w3-bar-block" style="display:none">
+    <a href="history.html" class="w3-bar-item w3-button">A Glimpse into History</a>
+    <a href="language.html" class="w3-bar-item w3-button">Language: The Heartbeat of Culture</a>
+    <a href="spirit.html" class="w3-bar-item w3-button">Spitirual Beliefs and Practices</a>
+    <a href="hula.html" class="w3-bar-item w3-button">The Art of Hula</a>
+    <a href="soul.html" class="w3-bar-item w3-button">Music: The Soul of the Islands</a>
+    <a href="taste.html" class="w3-bar-item w3-button">Taste of Hawaii</a>
+    <a href="festivals.html" class="w3-bar-item w3-button">Festivals</a>
+    <a href="clothing.html" class="w3-bar-item w3-button">Clothing</a>
+    <a href="core.html" class="w3-bar-item w3-button">Core Values and the Way of Life</a>
+    
+  </div>
+  
+</div>
+
+<div style="margin-left:10%">
+
+<div class="w3-container primary">
+<h1> Festivals and Celebrations</h1>
+<p class="mar"style="margin-left:10%;">---------</p>
+
+<p class="center">
+
+
+Hawaiian culture flourishes through its vibrant festivals and celebrations, which vividly showcase the islands' rich traditions and community spirit. <br><br>The <strong>Merrie Monarch Festival</strong>, held annually in Hilo, is a week-long celebration dedicated to hula and Hawaiian arts, honoring King David Kalākaua, a crucial figure in the cultural renaissance of Hawaii.<br><br> This prestigious event features hula competitions, traditional music, and cultural exhibitions, reflecting the deep respect for Hawaiian heritage and the revival of its ancient practices. <br><br>Similarly, <strong>King Kamehameha Day</strong>, celebrated on June 11th, is a momentous occasion that pays tribute to the great king who successfully united the Hawaiian Islands. The festivities encompass colorful floral parades, lively music, and a variety of cultural performances, all of which highlight the pride, unity, and enduring legacy of the Hawaiian people. Both festivals exemplify the islands' commitment to preserving and celebrating their unique cultural identity.
+
+<br>
+
+<p class="mar" style="margin-left:10%;">---------</p>
+</p>
+
+<br><br>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("dropdown");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+</script>
+
+      <div class="w3-container title">
+  <h1 > Festivals</h1>
+  <p>
+<strong><i>Merrie Monarch Festival</i></strong>
+<br><strong>Location:</strong> Hilo, Big Island
+<br><strong>Description: </strong>An annual celebration of hula and Hawaiian culture, this prestigious festival includes hula competitions, cultural exhibitions, and traditional music. It honors King David Kalākaua, known as the “Merrie Monarch,” who played a key role in the revival of hula in the 19th century.
+<br><strong>Timing:</strong> Usually held in April.
+<br><br><strong><i>Aloha Festivals</i></strong>
+<br><strong>Location:</strong> Various islands
+<br><strong>Description:</strong> One of the largest Hawaiian cultural festivals, Aloha Festivals celebrate Hawaiian culture through music, dance, parades, and arts. The event includes the famous Royal Court ceremonies, where a king and queen are crowned.
+<br><strong>Timing:</strong> Celebrated in September.
+<br><br><strong><i>Honolulu Festival</i></strong>
+<br><strong>Location:</strong> Honolulu, Oahu
+<br><strong>Description:</strong> A multi-cultural event celebrating the cultural diversity of Hawaii and the Pacific Rim. It features performances, parades, and workshops showcasing different cultures, with a focus on Hawaiian and Asian traditions.
+<br><strong>Timing:</strong> Typically held in March.
+<br><br><strong><i>Kona Coffee Cultural Festival</i></strong>
+<br><strong>Location: </strong>Kailua-Kona, Big Island
+<br><strong>Description:</strong> This festival celebrates the Kona coffee industry with events such as coffee tastings, cooking demonstrations, and a coffee-themed parade. It highlights the region’s rich coffee-growing heritage.
+<br><strong>Timing: </strong>Usually takes place in November.
+<br><br><strong><i>Waimea Cherry Blossom Heritage Festival</i></strong>
+<br><strong>Location: </strong>Waimea, Big Island
+<br><strong>Description:</strong> This festival celebrates the blooming of cherry blossoms with cultural performances, craft booths, and traditional Japanese activities. It showcases the Japanese influence on Hawaiian culture.
+<br><strong>Timing: Held in February.</strong>
+<br><br><strong><i> Prince Lot Hula Festival</i></strong>
+<br><strong>Location:</strong> Moanalua Gardens, Honolulu, Oahu
+<br><strong>Description:</strong> This annual festival honors Prince Lot Kapuāiwa, who was instrumental in the revival of hula. It features performances by hula halau (schools) from across Hawaii.
+<br><strong>Timing: Usually held in July.</strong>
+<br><strong><i>Hawaii Food & Wine Festival</i></strong>
+<br><strong>Location:</strong> Various islands
+<br><strong>Description:</strong> A premier culinary event featuring renowned chefs, winemakers, and food experts from around the world. The festival includes tastings, cooking demonstrations, and culinary discussions.
+<br><strong>Timing:</strong> Typically takes place in October.
+<br><br><strong><i>Maui Film Festival</i></strong>
+<br><strong>Location:</strong> Wailea, Maui
+<br><strong>Description:</strong> An annual film festival showcasing independent films, including international and local productions. It includes screenings, panel discussions, and special events.
+<br><strong>Timing:</strong> Usually held in June.
+<br><br><strong><i>. Lanai Pineapple Festival</i></strong>
+<br><strong>Location:</strong> Lanai Island
+<br><strong>Description:</strong> A community event celebrating Lanai’s pineapple industry with food, games, and entertainment. The festival highlights the island’s agricultural heritage.
+<br><strong>Timing:</strong> Typically held in May.
+<br><br><strong><i>Hilo Hawaiian Festival</i></strong>
+<br><strong>Location: </strong>Hilo, Big Island
+<br><strong>Description:</strong> A cultural festival celebrating Hawaiian heritage with hula performances, music, arts and crafts, and traditional foods.
+<br><strong>Timing:</strong> Usually occurs in August
+<br><br>
+</p>
+</div>
+</div>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://ern5nupvb62.exactdn.com/wp-content/uploads/2023/10/Aloha-Festivals.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.gohawaii.com/sites/default/files/Hawaii%20Food%20and%20wine%20festival.jpg" style="width:100%">
+  <img class="mySlides" src="https://i0.wp.com/honoluluvibes.com/wp-content/uploads/2018/10/PRGZ1554.jpg?resize=1200%2C780&ssl=1" style="width:100%">
+  <img class="mySlides" src="https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2022/02/b/n/dane-nakama-1-1024x681.jpeg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+<br><br>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

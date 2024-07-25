@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<title>Hawaiian Islands</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julee&family=Macondo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer
+  }
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
+
+
+}
+
+.color {
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+img {
+  border: 3px solid white;
+  border-radius: 15px 0 15px 0;
+}
+p {
+  background-color: lightgrey;
+  padding: 5px;
+  font-family: "Macondo", cursive;
+  width: 68%;
+  margin-right: auto;
+  margin-left: auto;
+}
+h2 {
+  background-color: #C3E2B4;
+  font-family: "Julee", cursive;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 15px 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h4 {
+  font-family: "Racing Sans One", sans-serif;
+  text-align: center;
+}
+body {
+  background-color: grey;
+}
+.f {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Racing Sans One", sans-serif;
+
+}
+#pine {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border:none;
+}
+iframe {
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  display: flex;
+  border: 2px solid rgb(209, 227, 228);
+  border-radius: 0 35px 0 35px;
+}
+</style>
+<body>
+<!-- <div class="w3-container">
+  <h2>Slideshow Caption</h2>
+  <p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright, bottomleft, bottommiddle, bottomright or middle).</p>
+</div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="https://images.unsplash.com/photo-1713124209743-4959549a2fda?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    French Alps
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://images.unsplash.com/photo-1713124209743-4959549a2fda?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Northern Lights
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://images.unsplash.com/photo-1713124209743-4959549a2fda?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Beautiful Mountains
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://images.unsplash.com/photo-1713124209743-4959549a2fda?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    The Rain Forest
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script> -->
+<br>
+<!-- 
+<div class="w3-container">
+  <h2>Hawaii Islands</h2>
+  <p>Resize the browser window to see the result:</p>
+
+  <div class="w3-bar w3-black">
+    <a href="#" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+    <div class="w3-dropdown-hover w3-mobile">
+      <button class="w3-button">Islands <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Maui</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<br>
+<br>
+<div class="w3-container">
+  <h2>Hawaiian Islands</h2>
+  <p>Click on the Dropdown link to open the dropdown menu.</p>
+<div class="color">
+  <div class="w3-bar w3-black " >
+    <a href="#" class="w3-bar-item w3-button"><img src="img/pine.jpg" id="pine"></a>
+    <a href="#" class="w3-bar-item w3-button">Culture</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Islands <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="#" class="w3-bar-item w3-button">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button">Maui</a>
+        <a href="#" class="w3-bar-item w3-button">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<br>
+<br>
+<br>
+<div class="w3-container">
+  
+
+  <div class="w3-row">
+    <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Things to Do</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Food</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Sightseeing</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Things to Do</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Food</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding f">Sightseeing</div>
+    </a>
+
+  </div>
+
+  <div id="London" class="w3-container city" style="display:none">
+    <h4>Things to Do</h4>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Paris" class="w3-container city" style="display:none">
+    <h4>Food</h4>
+    <p>Paris is the capital of France.</p> 
+  </div>
+
+  <div id="Tokyo" class="w3-container city" style="display:none">
+    <h4>Sightseeing</h4>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <div id="London" class="w3-container city" style="display:none">
+    <h4>Things to Do</h4>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Paris" class="w3-container city" style="display:none">
+    <h4>Food</h4>
+    <p>Paris is the capital of France.</p> 
+  </div>
+
+  <div id="Tokyo" class="w3-container city" style="display:none">
+    <h4>Sightseeing</h4>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-black", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-black";
+}
+</script>
+<br>
+<div class="w3-container">
+  <h2>Honu</h2>
+  <p>The Honu is a symbol of longevity, safety, and mana (spiritual energy) in Hawaiian culture and their presence brings good luck and peace. The Honu is considered a form of ‘aumakua or ancestral spirit offering lifelong protection, wisdom and guidance. Honu are depicted in ancient Hawaiian petroglyphs, artwork and mythology and represent the eternal link between man, land and sea.</p>
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1473794492299-053053984395?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1627246786513-a0afdb50a551?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1699325889670-58a2bcaf8b63?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1627246786513-a0afdb50a551?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+<br>
+<br>
+<div id="haw">
+<iframe src="https://www.google.com/maps/d/embed?mid=1T5xja0H7Q2cst4CczsZBrMixsRrWUFA&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+<br>
+</div>
+
+<iframe src="https://www.google.com/maps/d/u/1/embed?mid=12f57pFyGzE_8aXNSD7ITVgwVZdSGDnc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+<br>
+
+   
+</body>
+</html> 

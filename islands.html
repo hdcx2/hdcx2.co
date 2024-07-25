@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Islands</title>
+	<style>
+	body{
+			background-color: beige;
+		}
+		h1{
+			font-family: 'Rowdies', cursive;
+			text-align: center;
+		}
+		#nav {
+			margin-right: auto;
+			margin-left: auto;
+			width:750px;
+			text-align: center;
+
+		}
+
+		#nav a{
+			text-decoration: none;
+			color: #F6F7AD;
+			background-color: #13273A;
+			width: 150px;
+			text-align: center;
+			display: block;
+			float: left;
+			margin-bottom: 5px;
+			
+
+
+		}
+
+		#nav a:hover {
+			background-color: #462F85;
+			color: #F6F7AD; 
+		}
+		
+		#nav .active{
+			background-color: #7ED7BC;
+			color:black; 
+		 
+		}
+		p {
+			color: black;
+			border: solid black 5px;
+			background-color: palegoldenrod;
+			font-family: 'Kumar One Outline', cursive;
+			font-weight: 11px;
+			font-size: 30px;
+			padding-bottom: 5px;
+			width: 300px;
+			height: 40px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		h2 {
+
+				margin-right: auto;
+				margin-left: auto;
+				text-align: center;
+				width: 350px;
+				background-color: #162243;
+				border: 5px solid darkgrey;
+				color: white;
+				padding: 10px;
+				letter-spacing: 2px;
+				font-family: 'Aladin', cursive;
+				font-size: 30px;
+				box-shadow: 20px 10px 10px black;
+				/*font-family: 'Berkshire Swash', cursive;*/
+			}
+
+		h3 {
+
+				margin-right: auto;
+				margin-left: auto;
+				text-align: center;
+				width: 350px;
+				background-color: grey;
+				border: 5px solid navy;
+				color: black;
+				padding: 10px;
+				letter-spacing: 2px;
+				font-family: 'Aladin', cursive;
+				font-size: 30px;
+				/*box-shadow: 20px 10px 10px black;*/
+				font-family: 'Berkshire Swash', cursive;
+			}
+			.IMG {
+				width: 300px;
+				padding: 10px;
+				margin: 10px;
+				background-color: grey;
+				float: left;
+				position: relative;
+				text-align: center;
+				display: block;
+			}
+			.IMG img {
+				width: 100%;
+			}
+			.IMG .Intro {
+				background-color: darkgrey;
+				color: white;
+				font-size: 20px;
+				padding: 10px;
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+			}
+			.clearfloat {
+				clear: both;
+			}
+			#Box {
+				background-color: midnightblue;
+				width: 1030px;
+				font-family: 'Marck Script', cursive;
+				font-weight: 10px;
+				height: 600px;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				padding: 20px;
+				border: solid black 5px;
+			}
+			#Photos {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+			#Names {
+				background-color: white;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				font-family: 'Grechen Fuemen', cursive;
+				text-align: center;
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+			#about {
+				background-color: black;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				color: white;
+				font-family: 'Euphoria Script', cursive;
+				text-align: center;
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+			.idk {
+				float: left;
+			}
+			.clearfloat{
+
+			}
+			#Names2 {
+				background-color: white;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				font-family: 'Grechen Fuemen', cursive;
+				text-align: center;
+				color: black;
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+			#about2 {
+				background-color: black;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				color: white;
+				font-family: 'Euphoria Script', cursive;
+				text-align: center;
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+
+			#Names3 {
+				background-color: white;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				font-family: 'Grechen Fuemen', cursive;
+				text-align: center;
+				color: black;
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+			#about3 {
+				background-color: black;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				color: white;
+				font-family: 'Euphoria Script', cursive;
+				text-align: center;
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+			#Names4 {
+				background-color: white;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				font-family: 'Grechen Fuemen', cursive;
+				text-align: center;
+				color: black;
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+			#about4 {
+				background-color: black;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				color: white;
+				font-family: 'Euphoria Script', cursive;
+				text-align: center;
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+			#Names6 {
+				background-color: white;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				font-family: 'Grechen Fuemen', cursive;
+				text-align: center;
+				color: black;
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+			#about6 {
+				background-color: black;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				color: white;
+				font-family: 'Euphoria Script', cursive;
+				text-align: center;
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+			#Names5 {
+				background-color: white;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				font-family: 'Grechen Fuemen', cursive;
+				text-align: center;
+				color: black;
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+			#about5 {
+				background-color: black;
+				font-size: 90px;
+				height: 746px;
+				width: 50%;
+				color: white;
+				font-family: 'Euphoria Script', cursive;
+				text-align: center;
+				
+				border-top: 2px solid #40474E;
+				
+				border-bottom: 2px solid #40474E;
+			}
+			.Animation {
+				background-color: black;
+				color: white;
+				animation-name: Testing;
+				animation-duration: 4s;
+			}
+			@keyframes Testing {
+					0% {
+						background-color: white;
+					}
+					20% {
+						background-color: black;
+						color: white;
+					}
+					40% {
+						background-color: darkgrey;
+					}
+					60% {
+						background-color: white;
+					}
+					80% {
+						background-color: black;
+						color: white;
+					}
+					100% {
+						background-color: darkgrey;
+					}
+			}
+			#random {
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#hobos {
+				font-family: 'Petemoss', cursive;
+				font-size: 60px;
+				background-color: black;
+				color: whitesmoke;
+				width: 300px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+	</style>
+</head>
+<body>
+		
+	<div id="Photos">
+	<p><strong>Pictures!</strong></p>
+	<div id="Box">
+		<br>
+		<br>
+	<div class="IMG">
+		<img src="img/image0.png">
+		<div class="Intro">Just Instruments</div>
+	</div>
+	<br>
+	<br>
+	<div class="IMG">
+		<img src="img/image1.png">
+		<div class="Intro">Band Logo</div>
+	</div>
+	<br>
+	<br>
+	<div class="IMG">
+		<img src="img/image2.png">
+		<div class="Intro">Another Version of the Band Logo</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+</div>
+<h4 id="hobos">About Our Members</h4>
+<div id="random">
+	<div id="Names" class="idk">
+		
+		<h5>
+			<br><br><br>Hawaiʻi<br><br><br></h5>
+
+	</div>
+	<div id="about" class="idk"><strong><br><br>Fun<br>Adventurous<br>Eccentric<br>
+		</strong><br></div>
+	<div id="about2" class="idk">
+		
+		<strong><br><br>Friendly<br>Smart<br>Loving<br></strong>
+
+	</div>
+	<div id="Names2" class="idk">
+	<h5>
+			<br><br>Maui<br>
+			<br></h5></div>
+</div>
+<div id="Names3" class="idk">
+<h5>
+			<br><br>Kahoʻolawe<br><br></h5>
+
+	</div>
+	<div id="about3" class="idk"><strong><br><br>Creative<br>Kind<br>Supportive</strong></div>
+</div>
+<div id="about4" class="idk">
+		
+		<strong><br><br>Nice Guy<br>Depends <br>on Mood</strong>
+
+	</div>
+	<div id="Names4" class="idk">
+	<h5>
+			<br><br>Lānaʻi</h5></div>
+</div>
+<div id="Names6" class="idk">
+<h5>
+			<br><br>Molokaʻi<br><br></h5>
+
+	</div>
+	<div id="about6" class="idk"><strong><br><br>Athletic<br>Fun<br>Smart</strong></div>
+</div>
+
+		
+		<div id="about5" class="idk"><strong><br><br>Artist<br>Honest<br>Fun</strong></div>
+
+	</div>
+<div id="Names5" class="idk">
+<h5>
+			<br><br>Oʻahu</h5>
+
+	</div>
+	<div id="Names" class="idk">
+		
+		<h5>
+			<br><br><br>Kauaʻi<br><br><br></h5>
+
+	</div>
+	<div id="about" class="idk"><strong><br><br>Fun<br>Adventurous<br>Eccentric<br>
+		</strong><br></div>
+	<div id="about2" class="idk">
+		
+		<strong><br><br>Friendly<br>Smart<br>Loving<br></strong>
+
+	</div>
+	<div id="Names2" class="idk">
+	<h5>
+			<br><br>Niʻihau<br>
+			<br></h5></div>
+</div>
+	<br>
+
+
+</div>
+<br>
+
+<!-- <p class="Animation">Hello this is an animation<br></p>
+ --><br>
+<br><br><br><br><br><br><br>
+</body>
+</html>

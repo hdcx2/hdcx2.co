@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spiritual Beliefs and Practices</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julee&family=Macondo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  .work{
+  flex-direction: row;
+}
+.color {
+  width: 94%;
+  display: flex;
+  
+  float: left;
+  flex-wrap: wrap;
+  background-color: #384133;
+}
+#ohana{
+  background-color: white;
+  width: 80px;
+  height: 90px;
+  float: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  border-radius: 0px 0px 0px 20px;
+  border: 2px solid;
+
+
+}
+#pine {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border:none;
+}
+
+.primary {
+  background-color: #C3E2B4;
+  width: 80%;
+  border-radius: 10px 0px 10px 0px;
+  border: 5px double #82A075;
+}
+h1 {
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Grandstander", cursive;
+
+}
+p {
+    font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+
+}
+.center {
+   font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+  background-color: #ECF5E8;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background: #404040;  */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+    
+}
+img {
+  border: 3px double; #5D6858;
+  border-radius: 15px 0 15px 0;
+}
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
+
+
+}
+/*.title {
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}
+.title h1{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    padding: 10px;
+    margin-right: auto;
+}
+.title p{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 80%;
+  margin-left: 8%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}*/
+#wbg {
+  background-color: #384133;
+}
+.mar {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<button class="w3-button w3-large" style="position: absolute; top: 0; left: 0;" onclick="w3_open()">&#9776;</button>
+<div class="work"style="margin-left:3%">
+<div class="w3-container">
+<a href=""><img src="img/turtle.jpg" style="margin-right: 3px;" id="ohana"></a>
+<div class="color" >
+  
+  <div class="w3-bar w3-black " id="wbg" >
+      
+
+      <a href="index.html" class="w3-bar-item w3-button"><img src="img/pine.jpg" id="pine"></a>
+    <a href="culture.html" class="w3-bar-item w3-button">Culture</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Islands <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="islandofhawaii.html" class="w3-bar-item w3-button">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button">Maui</a>
+        <a href="#" class="w3-bar-item w3-button">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" id="mySidebar" style="width:20%; display: none;">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  <a href="culture.html" class="w3-bar-item w3-button">Culture</a> 
+  <button class="w3-bar-item w3-button" onclick="toggleDropdown()">Hawaiian Culture
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="dropdown" class="w3-bar-block" style="display:none">
+    <a href="history.html" class="w3-bar-item w3-button">A Glimpse into History</a>
+    <a href="language.html" class="w3-bar-item w3-button">Language: The Heartbeat of Culture</a>
+    <a href="spirit.html" class="w3-bar-item w3-button">Spitirual Beliefs and Practices</a>
+    <a href="hula.html" class="w3-bar-item w3-button">The Art of Hula</a>
+    <a href="soul.html" class="w3-bar-item w3-button">Music: The Soul of the Islands</a>
+    <a href="taste.html" class="w3-bar-item w3-button">Taste of Hawaii</a>
+    <a href="festivals.html" class="w3-bar-item w3-button">Festivals</a>
+    <a href="clothing.html" class="w3-bar-item w3-button">Clothing</a>
+    <a href="core.html" class="w3-bar-item w3-button">Core Values and the Way of Life</a>
+  </div>
+
+</div>
+
+<div style="margin-left:10%">
+
+<div class="w3-container primary">
+<h1>Spiritual Beliefs and Practices
+</h1>
+<p class="mar"style="margin-left:10%;">---------</p>
+
+<p class="center">
+Hawaiian spirituality is deeply intertwined with nature, emphasizing respect and reverence for the land, sea, and sky. The Hawaiian pantheon is rich with gods and goddesses, each representing different aspects of life. For instance:<br><br>
+<strong>Kāne:</strong> The god of creation and the sky, Kāne is a prominent deity who is associated with life-giving forces such as fresh water, sunlight, and the forests. He is often called upon in prayers for life and prosperity.<br><br>
+
+<strong>Kanaloa:</strong> As the god of the ocean and the underworld, Kanaloa is considered a counterpart to Kāne. He governs the seas and is often invoked for protection during voyages and fishing expeditions.<br><br>
+
+<strong>Lono:</strong> The god of agriculture, fertility, and peace, Lono is celebrated during the Makahiki festival, a time of feasting, sports, and the end of warfare. He is associated with rain and the growth of crops.
+<br><br>
+<strong>Ku:</strong> The god of war and strength, Kū is revered as the protector of warriors and a powerful deity in battles. He is also linked to agriculture, prosperity, and building, symbolizing the strength needed for these pursuits.<br><br>
+
+<strong>Pele:</strong> Perhaps the most famous goddess, Pele is the goddess of fire and volcanoes. Known for her temper and passion, she is both creator and destroyer, shaping the islands with her molten lava. Her presence is felt at Kīlauea, one of the world's most active volcanoes.
+<br><br>
+<strong>Hiʻiaka:</strong> The younger sister of Pele, Hiʻiaka is the goddess of hula and healing. She is often depicted as a kind and compassionate figure who protects travelers and aids in the growth of vegetation.<br><br>
+
+<strong>Hina:</strong> Often associated with the moon, Hina is a goddess of beauty, creativity, and femininity. Her stories are found in various legends, and she is revered for her wisdom and connection to the moon's cycles.
+<br><br>
+<strong>Kamohoaliʻi:</strong> The god of sharks and the ocean, Kamohoaliʻi is believed to protect sailors and guide canoes safely through treacherous waters.
+<br><br>
+<strong>Kamapuaʻa:</strong> A shape-shifting god associated with both the land and the sea, Kamapuaʻa often appears as a boar and is known for his mischievous adventures and battles with Pele.
+These gods and goddesses play a central role in Hawaiian mythology, shaping the natural world and the lives of the people. Hawaiians believe in <strong><i>mana</i></strong>, a spiritual energy that flows through all things, from people to plants to places. This belief fosters a sense of connection and responsibility to care for the ʻāina <i>(land)</i>, a concept known as <strong>mālama ʻāina</strong>.
+<p class="mar" style="margin-left:10%;">---------</p>
+</p>
+<br><br>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("dropdown");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+</script>
+
+      <div class="w3-container title">
+  <h1 > The Night Marchers</h1>
+  <p><strong><i>Aumakua (Ancestral Spirits)</i></strong><br><br>
+<strong>Definition: </strong>Aumakua are family or personal gods, deified ancestors who take on physical forms, such as animals or natural elements, to protect and guide their descendants.
+<br>
+<strong>Forms:</strong> Common aumakua forms include sharks, owls, turtles, geckos, and plants. Each family may have its own aumakua, representing a specific animal or element.
+<br><br>
+<strong><i>Roles and Responsibilities:</i></strong>
+<br><br>
+<strong>Protection:</strong> Aumakua are believed to protect their descendants from harm and provide guidance in times of need.<br>
+<strong>Communication:</strong> Hawaiians communicate with their aumakua through prayers, chants, and offerings, seeking advice and support.<br>
+<strong>Moral Guidance:</strong> Aumakua play a role in reinforcing moral and ethical behavior within families.<br>
+<strong>Respect and Reverence:</strong> It is essential to show respect to aumakua, as they are considered sacred. Disrespecting an aumakua could result in negative consequences.
+<br><br>
+<strong>Night Marchers</strong> <i>(Hawaiian: Huaka‘i Pō)</i> are ghostly apparitions of ancient Hawaiian warriors who are said to march through certain areas of the islands during specific nights. They hold significant cultural importance and are considered both fascinating and fearsome. 
+<br><br>
+<strong><i>Origins and Description</i></strong><br><br>
+<strong>Ancient Warriors: </strong>Night Marchers are believed to be the spirits of ancient Hawaiian warriors, chiefs, and kings. They are often depicted as fierce, powerful figures who once protected the islands and upheld Hawaiian law.
+<br>
+<strong>Appearance:</strong> According to legend, Night Marchers appear as ghostly figures, dressed in traditional Hawaiian clothing, carrying weapons such as spears, clubs, and torches. They are often seen moving in a single-file procession, accompanied by the sounds of drums, chanting, and conch shells.
+<br>
+<strong>Awe-Inspiring Presence:</strong> Night Marchers are said to have an aura of awe and authority. Their presence is announced by the sounds of chanting and drums, and the air often becomes heavy with a sense of anticipation.
+
+<strong>Purpose and Activities</strong><br><br>
+<strong>Procession:</strong> Night Marchers are believed to march along specific paths, often following ancient routes leading to sacred sites, burial grounds, or battlefields. These paths are known as “kīpuka” or “kīpuka kupuna,” which are thought to be areas where the physical and spiritual worlds intersect.
+<br>
+<strong>Protectors:</strong> They serve as protectors, ensuring that sacred traditions and the honor of ancient chiefs are maintained. It is said that they appear to escort the spirits of those who have recently died or to mark the anniversary of significant battles.
+<br>
+<strong>Guardian Spirits:</strong> Night Marchers are also seen as guardians of the islands, appearing to remind the living of the sacredness of the land and the importance of respecting cultural heritage.
+<br><br>
+<strong>Encounters and Beliefs</strong><br><br>
+<strong>Respectful Behavior:</strong> According to tradition, if someone encounters Night Marchers, they should show respect by lying face down on the ground and avoiding eye contact. This demonstrates humility and acknowledges the authority of the ancient spirits.
+<br>
+<strong>Ancestral Connection:</strong> It is believed that if a person has an ancestor among the Night Marchers, they will be spared from harm during an encounter. This ancestral connection is seen as a protective bond between the living and the spiritual realm.
+<br>
+<strong>Forbidden Areas:</strong> Areas known for Night Marcher activity are often considered kapu (forbidden) during specific nights, particularly on the nights of the Hawaiian lunar calendar associated with spiritual activity, such as Kāne, Ku, Lono, and Kanaloa.
+<br><br>
+<strong>Cultural Significance</strong><br><br>
+<strong>Mythology and Storytelling:</strong> Night Marchers are a significant part of Hawaiian mythology and folklore, with stories passed down through generations. These tales serve as cautionary reminders of the power and presence of the spiritual world.
+<br>
+<strong>Cultural Heritage:</strong> The legends of Night Marchers highlight the importance of cultural preservation and respect for Hawaiian traditions, emphasizing the belief in a spiritual connection between the past and present.
+<br><br>
+<strong>Modern Interpretations</strong><br><br>
+<strong>Tourist Attractions:</strong> Some areas known for Night Marcher sightings have become tourist attractions, with guided tours and storytelling sessions that explore the legends and history behind the phenomenon.
+<br>
+<strong>Respectful Awareness:</strong> While the legends are often sensationalized for entertainment, it is essential to approach the subject with respect and an understanding of its cultural significance.
+<br>
+<strong><i>Locations Associated with Night Marchers</i></strong><br>
+Certain locations in Hawaii are commonly associated with Night Marcher activity, including:<br><br>
+<br>
+<strong>Kualoa Ranch, Oahu: </strong> Known as a sacred place in Hawaiian history, it is one of the areas where Night Marchers are said to appear.
+<br>
+<strong>Kalalau Valley, Kauai:</strong> This remote and mystical valley is believed to be a pathway for Night Marchers.
+<br>
+<strong>Waipio Valley, Big Island:</strong> Known for its historical significance and sacred sites, Night Marchers are said to travel through this valley.
+<br>
+<strong>Ka‘ena Point, Oahu: </strong>This area is associated with ancient burial sites and is considered a passage for spirits
+<br><br>
+</p>
+</div>
+</div>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://www.onlyinyourstate.com/wp-content/uploads/2017/10/14087286043_49e79a7d74_k.jpg" style="width:100%">
+  <img class="mySlides" src="https://images.squarespace-cdn.com/content/v1/620c57cd35980c2b65e91db1/651bb1bb-5cd2-4449-a4d6-c7453885920a/4_DiamondHead_Full+Moon.jpg" style="width:100%">
+  <img class="mySlides" src="https://hat-storage.imgix.net/2024/01/stories-of-night-marchers-in-Hawaii.jpg?auto=compress%2Cformat&ixlib=php-3.3.1&s=a5d4db8fc590d1d9dd6914919ecc4e66" style="width:100%">
+  <img class="mySlides" src="https://www.onlyinyourstate.com/wp-content/uploads/2017/10/13922195612_3dc4ae5ae6_k.jpg?w=720" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+<br><br>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

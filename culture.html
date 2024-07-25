@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Culture</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julee&family=Macondo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  .work{
+  flex-direction: row;
+}
+.color {
+  width: 94%;
+  display: flex;
+  
+  float: left;
+  flex-wrap: wrap;
+  background-color: #384133;
+}
+#ohana{
+  background-color: white;
+  width: 80px;
+  height: 90px;
+  float: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  border-radius: 0px 0px 0px 20px;
+  border: 2px solid;
+
+
+}
+#pine {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border:none;
+}
+
+.primary {
+  background-color: #C3E2B4;
+  width: 80%;
+  border-radius: 10px 0px 10px 0px;
+  border: 5px double #82A075;
+}
+h1 {
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Grandstander", cursive;
+
+}
+p {
+    font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+
+}
+.center {
+   font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+  background-color: #ECF5E8;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background: #404040;  */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+    
+}
+img {
+  border: 3px double; #5D6858;
+  border-radius: 15px 0 15px 0;
+}
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
+
+
+}
+/*.title {
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}
+.title h1{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    padding: 10px;
+    margin-right: auto;
+}
+.title p{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 80%;
+  margin-left: 8%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}*/
+#wbg {
+  background-color: #384133;
+}
+.mar {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<button class="w3-button w3-large" style="position: absolute; top: 0; left: 0;" onclick="w3_open()">&#9776;</button>
+<div class="work"style="margin-left:3%">
+<div class="w3-container">
+<a href=""><img src="img/turtle.jpg" style="margin-right: 3px;" id="ohana"></a>
+<div class="color" >
+  
+  <div class="w3-bar w3-black " id="wbg" >
+      
+
+      <a href="index.html" class="w3-bar-item w3-button"><img src="img/pine.jpg" id="pine"></a>
+    <a href="culture.html" class="w3-bar-item w3-button">Culture</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Islands <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="islandofhawaii.html" class="w3-bar-item w3-button">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button">Maui</a>
+        <a href="#" class="w3-bar-item w3-button">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" id="mySidebar" style="width:20%; display: none;">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  <a href="culture.html" class="w3-bar-item w3-button">Culture</a> 
+  <button class="w3-bar-item w3-button" onclick="toggleDropdown()">Hawaiian Culture
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="dropdown" class="w3-bar-block" style="display:none">
+    <a href="history.html" class="w3-bar-item w3-button">A Glimpse into History</a>
+    <a href="language.html" class="w3-bar-item w3-button">Language: The Heartbeat of Culture</a>
+    <a href="spirit.html" class="w3-bar-item w3-button">Spitirual Beliefs and Practices</a>
+    <a href="hula.html" class="w3-bar-item w3-button">The Art of Hula</a>
+    <a href="soul.html" class="w3-bar-item w3-button">Music: The Soul of the Islands</a>
+    <a href="taste.html" class="w3-bar-item w3-button">Taste of Hawaii</a>
+    <a href="festivals.html" class="w3-bar-item w3-button">Festivals</a>
+    <a href="clothing.html" class="w3-bar-item w3-button">Clothing</a>
+    <a href="core.html" class="w3-bar-item w3-button">Core Values and the Way of Life</a>
+  
+</div>
+</div>
+<div style="margin-left:10%">
+
+<div class="w3-container primary">
+<h1>Native Hawaiian Culture</h1>
+<p class="mar"style="margin-left:10%;">---------</p>
+
+<p class="center"><strong>Language:</strong> The Hawaiian language <i>(ʻŌlelo Hawaiʻi)</i> is central to the culture, with efforts ongoing to revive and preserve it. Many place names and cultural practices are expressed in Hawaiian.<br><br>
+<strong>Hula:</strong> This traditional dance form tells stories through movement and chants <i>(mele). <br></i> There are two main types: &nbsp<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp✧ Hula Kahiko <i>(ancient hula)</i> <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp✧ Hula ʻAuana <i>(modern hula)</i><br><img src="img/hula.jpg" width="42%" height="30%"> <img src="img/hula2.jpg" width="40%" height="30%"><br><br>
+<strong>Mālama ʻĀina:</strong> This principle of caring for the land is integral, reflecting a deep connection with nature and sustainability.<br><br>
+<strong>Aloha Spirit:</strong> The concept of aloha encompasses love, peace, and compassion, influencing social interactions and hospitality.<br><br>
+Hawaiian culture is a fascinating tapestry of traditions, stories, and practices that have evolved over centuries. Imagine setting foot on the beautiful islands of Hawaii, surrounded by the vibrant colors of nature, the sweet scent of plumeria, and the soothing sounds of the ocean. <br><br>Rooted in Polynesian heritage, Hawaiian culture emphasizes <strong><i>aloha</i></strong> <i>(love and compassion)</i>, <strong><i>ʻohana</i></strong><i> (family)</i>, and <strong><i>mālama ʻāina</i></strong><i> (stewardship of the land)</i>, fostering a profound sense of community and respect for nature. <br><br>The <strong><i>Hawaiian language</i></strong><i>(ʻŌlelo Hawaiʻi)</i> and practices such as <strong>hula</strong> dance and <strong>mele</strong> <i>(song)</i> serve as vital expressions of identity and history, celebrating the islands' unique stories and spirituality. <br><br>Traditional values are embodied in the reverence for gods and goddesses like <strong>Pele</strong>, the fiery goddess of volcanoes, and <strong>Kanaloa</strong>, the god of the ocean. Contemporary Hawaiian culture continues to evolve, incorporating influences from diverse cultures while preserving its core traditions and values, creating a dynamic and inclusive society that honors its past while looking toward the future. <br>
+<p class="mar" style="margin-left:10%;">---------</p>
+</p>
+
+<br><br>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("dropdown");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+</script>
+
+      <div class="w3-container title">
+  <h1 >Honu</h1>
+  <p>The Honu is a symbol of longevity, safety, and mana (spiritual energy) in Hawaiian culture and their presence brings good luck and peace. The Honu is considered a form of ‘aumakua or ancestral spirit offering lifelong protection, wisdom and guidance. Honu are depicted in ancient Hawaiian petroglyphs, artwork and mythology and represent the eternal link between man, land and sea.</p>
+</div>
+</div>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1473794492299-053053984395?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1627246786513-a0afdb50a551?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1699325889670-58a2bcaf8b63?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1627246786513-a0afdb50a551?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+<br><br>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

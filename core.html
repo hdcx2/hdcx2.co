@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Core Values and Way of Life</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julee&family=Macondo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  .work{
+  flex-direction: row;
+}
+.color {
+  width: 94%;
+  display: flex;
+  
+  float: left;
+  flex-wrap: wrap;
+  background-color: #384133;
+}
+#ohana{
+  background-color: white;
+  width: 80px;
+  height: 90px;
+  float: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  border-radius: 0px 0px 0px 20px;
+  border: 2px solid;
+
+
+}
+#pine {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border:none;
+}
+
+.primary {
+  background-color: #C3E2B4;
+  width: 80%;
+  border-radius: 10px 0px 10px 0px;
+  border: 5px double #82A075;
+}
+h1 {
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Grandstander", cursive;
+
+}
+p {
+    font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+
+}
+.center {
+   font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+  background-color: #ECF5E8;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background: #404040;  */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+    
+}
+img {
+  border: 3px double; #5D6858;
+  border-radius: 15px 0 15px 0;
+}
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
+
+
+}
+/*.title {
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}
+.title h1{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    padding: 10px;
+    margin-right: auto;
+}
+.title p{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 80%;
+  margin-left: 8%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}*/
+#wbg {
+  background-color: #384133;
+}
+.mar {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<button class="w3-button w3-large" style="position: absolute; top: 0; left: 0;" onclick="w3_open()">&#9776;</button>
+<div class="work"style="margin-left:3%">
+<div class="w3-container">
+<a href=""><img src="img/turtle.jpg" style="margin-right: 3px;" id="ohana"></a>
+<div class="color" >
+  
+  <div class="w3-bar w3-black " id="wbg" >
+      
+
+      <a href="index.html" class="w3-bar-item w3-button"><img src="img/pine.jpg" id="pine"></a>
+    <a href="culture.html" class="w3-bar-item w3-button">Culture</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Islands <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="islandofhawaii.html" class="w3-bar-item w3-button">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button">Maui</a>
+        <a href="#" class="w3-bar-item w3-button">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" id="mySidebar" style="width:20%; display: none;">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  <a href="culture.html" class="w3-bar-item w3-button">Culture</a> 
+  <button class="w3-bar-item w3-button" onclick="toggleDropdown()">Hawaiian Culture
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="dropdown" class="w3-bar-block" style="display:none">
+    <a href="history.html" class="w3-bar-item w3-button">A Glimpse into History</a>
+    <a href="language.html" class="w3-bar-item w3-button">Language: The Heartbeat of Culture</a>
+    <a href="spirit.html" class="w3-bar-item w3-button">Spitirual Beliefs and Practices</a>
+    <a href="hula.html" class="w3-bar-item w3-button">The Art of Hula</a>
+    <a href="soul.html" class="w3-bar-item w3-button">Music: The Soul of the Islands</a>
+    <a href="taste.html" class="w3-bar-item w3-button">Taste of Hawaii</a>
+    <a href="festivals.html" class="w3-bar-item w3-button">Festivals</a>
+    <a href="clothing.html" class="w3-bar-item w3-button">Clothing</a>
+    <a href="core.html" class="w3-bar-item w3-button">Core Values and the Way of Life</a>
+    
+  </div>
+  
+</div>
+
+<div style="margin-left:10%">
+
+<div class="w3-container primary">
+<h1> Core Values and Way of Life</h1>
+<p class="mar"style="margin-left:10%;">---------</p>
+
+<p class="center">
+
+
+
+At the heart of Hawaiian culture is the aloha spirit, a philosophy that emphasizes love, compassion, and respect for others. Aloha is more than a word; it's a way of life that fosters harmony and connection among people.<br><br>
+Family, or ʻohana, is another cornerstone of Hawaiian society. The concept of ʻohana extends beyond blood relations to include close friends and community members, highlighting the importance of support and loyalty.<br><br>
+Kuleana, meaning responsibility, reflects the Hawaiian commitment to caring for the land, community, and future generations. It's about recognizing one's role and taking action to protect and nurture what truly matters. 
+<br>
+
+<p class="mar" style="margin-left:10%;">---------</p>
+</p>
+
+<br><br>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("dropdown");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+</script>
+
+      <div class="w3-container title">
+  <h1 > Core Values</h1>
+  <p>
+ <strong><i>Aloha</i></strong>
+ <br><strong>Meaning:</strong> Aloha is more than just a greeting; it represents a deep sense of love, compassion, and respect. It embodies the spirit of kindness and generosity toward others.
+ <br><strong>Application:</strong> It’s reflected in everyday interactions, where people are encouraged to treat each other with warmth and understanding.
+ <br><br><strong><i> Ohana</i></strong>
+ <br><strong>Meaning:</strong> Ohana means family, but it extends beyond blood relations to include friends and community members. It emphasizes the importance of mutual support and interconnectedness.
+ <br><strong>Application:</strong> This value encourages individuals to support one another and work together for the benefit of the group, fostering a strong sense of belonging and unity.
+ <br><br><strong><i> Kuleana</i></strong>
+ <br><strong>Meaning:</strong> Kuleana refers to responsibility and duty. It signifies an individual’s obligation to care for their family, community, and environment.
+ <br><strong>Application:</strong> Embracing kuleana means taking personal responsibility for one’s actions and contributing positively to the well-being of others and the environment.
+ <br><br><strong><i> Malama</i></strong>
+ <br><strong>Meaning:</strong> Malama means to care for, protect, and nurture. It reflects the commitment to stewardship of the land, sea, and cultural traditions.
+ <br><strong>Application:</strong> This value is evident in practices related to environmental conservation, sustainability, and cultural preservation.
+ <br><br><strong> <i>Pono</i></strong>
+ <br><strong>Meaning:</strong> Pono represents righteousness, balance, and harmony. It involves acting with integrity and ensuring that actions are fair and just.
+ <br><strong>Application:</strong> Living pono means making ethical decisions, striving for balance in life, and ensuring that one’s actions contribute positively to the community.
+ <br><br><strong><i> Ho‘okipa</i></strong>
+ <br><strong>Meaning: </strong>Ho‘okipa is the concept of hospitality and welcoming guests with generosity and kindness.
+ <br><strong>Application:</strong> This value is shown through open-heartedness and the tradition of treating visitors with respect and care, reflecting the spirit of aloha.
+ <br><br><strong><i> Kupuna</i></strong>
+ <br><strong>Meaning:</strong> Kupuna refers to elders and ancestors. It acknowledges the wisdom and guidance that older generations provide and emphasizes the importance of honoring and respecting them.
+ <br><strong>Application:</strong> Valuing kupuna involves listening to their teachings, preserving their legacy, and seeking their advice in important matters.
+ <br><br><strong><i> Laulima</i></strong>
+ <br><strong>Meaning:</strong> Laulima means “many hands working together” and highlights the importance of collaboration and collective effort.
+ <br><strong>Application:</strong> It’s about working together to achieve common goals, sharing tasks, and supporting one another in community projects and daily life.
+<br> <br><strong><i> Mana</i></strong>
+ <br><strong>Meaning:</strong> Mana is the spiritual energy or power that resides in people, places, and things. It’s a concept of divine energy that influences one’s actions and connections.
+ <br><strong>Application:</strong> Recognizing and respecting mana involves understanding the spiritual significance of actions and maintaining a balance between physical and spiritual realms.
+ <br><br><strong><i> Hōʻikeʻike</i></strong>
+ <br><strong>Meaning:</strong> Hōʻikeʻike means to demonstrate, show, or reveal. It’s about sharing knowledge and skills with others, fostering a culture of learning and teaching.
+ <br><strong>Application: </strong>This value is reflected in the practice of passing down cultural traditions, knowledge, and practices through generations.
+<br><br>
+</p>
+</div>
+</div>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://www.holoholokauaiboattours.com/wp-content/uploads/sites/3702/2019/02/leimaking.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.gohawaii.com/sites/default/files/16347.jpg" style="width:100%">
+  <img class="mySlides" src="https://img2.10bestmedia.com/Images/Photos/395630/Hula-Westin-Maui_55_660x440.jpeg" style="width:100%">
+  <img class="mySlides" src="https://thishawaiilife.com/wp-content/uploads/2022/07/Na-Poe-Au-Hewa-146.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+<br><br>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

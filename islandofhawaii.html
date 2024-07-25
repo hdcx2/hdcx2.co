@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julee&family=Macondo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Salsa&display=swap" rel="stylesheet">
+
+<style>
+	img {
+  border: 3px solid white;
+  border-radius: 15px 0 15px 0;
+}
+#pine {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border:none;
+}
+h4 {
+  font-family: "Racing Sans One", sans-serif;
+  text-align: center;
+}
+p {
+  background-color: whitesmoke;
+  padding: 30px;
+  font-family: "Macondo", cursive;
+  width: 68%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px double navy;
+  border-radius: 0px 20px 0px 20px;
+}
+.color {
+  flex-direction: row;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+.chat-container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .chat-log {
+      padding: 10px;
+      overflow-y: auto;
+      height: 300px;
+    }
+    .chat-input {
+      padding: 10px;
+      border-top: 1px solid #ccc;
+    }
+    #user-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+    }
+    #send-btn {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    #send-btn:hover {
+      background-color: #3e8e41;
+    }
+    .chat-message {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .chat-message:last-child {
+      border-bottom: none;
+    }
+    .chat-message.assistant {
+      background-color: #f0f0f0;
+      border-radius: 10px 10px 0 10px;
+      padding-left: 20px;
+    }
+    .chat-message.user {
+      background-color: #fff;
+      border-radius: 10px 10px 10px 0;
+      padding-right: 20px;
+    }
+    .chat-message p {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+    #Chat {
+      border-radius: 500px 500px 500px 500px;
+      border-radius: 3px black solid;
+      margin-right: auto;
+      margin-left: auto;
+      align-items: center;
+      display: flex;
+        font-family: "Patrick Hand SC", cursive;
+
+      
+    }
+#ohana img{
+	width: 50px;
+	height: 50px;
+	
+}
+.city {display:none}
+#ohana{
+	background-color: white;
+	width: 80px;
+	height: 90px;
+	float: left;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+}
+.mySlides img {
+	width: 800px;
+	height: 700px;
+}
+body {
+	background-color: lightblue;
+}
+.work{
+	flex-direction: row;
+}
+h2 {
+  text-align: center;
+font-family: "Grandstander", cursive;
+}
+iframe {
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  display: flex;
+  border: 2px solid rgb(209, 227, 228);
+  border-radius: 0 35px 0 35px;
+}
+</style>
+	<title>Island of Hawai`i</title>
+</head>
+<body>
+
+	<div class="work">
+<div class="w3-container">
+<a href=""><img src="img/turtle.jpg" id="ohana"></a>
+<div class="color">
+  
+  <div class="w3-bar w3-black " >
+      
+
+      <a href="index.html" class="w3-bar-item w3-button"><img src="img/pine.jpg" id="pine"></a>
+    <a href="culture.html" class="w3-bar-item w3-button">Culture</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Islands <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="islandofhawaii.html" class="w3-bar-item w3-button">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button">Maui</a>
+        <a href="#" class="w3-bar-item w3-button">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<h2>Hawaiian Islands</h2>
+ <p><strong>Volcanic Legacy: </strong>The Big Island’s volcanic legacy is awe-inspiring. It boasts five volcanoes, each with its own character. Mauna Kea, a dormant volcano, stands as the tallest mountain on Earth when measured from its base at the ocean floor. Mauna Loa, the world’s most massive active volcano, continues to shape the island’s landscape. Visitors can explore volcanic craters, lava tubes, and ancient petroglyphs.<br>
+<strong>Beaches and Coastlines:</strong> The island’s beaches are as diverse as its volcanic terrain. Black sand beaches, formed by volcanic activity, dot the coastline. Punalu’u Beach is famous for its jet-black sands, while Green Sand Beach (Papakōlea Beach) offers a rare emerald hue due to olivine crystals. The rugged coastlines reveal dramatic cliffs, sea arches, and hidden coves.<br>
+<strong>Stargazing on Mauna Kea: </strong>Mauna Kea’s summit hosts some of the world’s most advanced observatories. Visitors can join stargazing tours to witness celestial wonders against the backdrop of the Pacific Ocean. The high elevation and clear skies make it an unparalleled astronomical site.<br>
+<strong>Rainforests and Waterfalls: </strong>The island’s eastern side is lush and green, with tropical rainforests nourished by abundant rainfall. Akaka Falls and Rainbow Falls are iconic waterfalls accessible via short hikes. The Hāmākua Coast offers breathtaking vistas of cliffs, valleys, and waterfalls.<br>
+<strong>Cultural Heritage: </strong>Immerse yourself in Hawaiian culture. Explore Puʻuhonua o Hōnaunau National Historical Park, a sacred “place of refuge” where ancient Hawaiians sought forgiveness. Visit Huliheʻe Palace in Kailua-Kona, a former royal residence. Attend a traditional hula performance or learn about ʻohana (family) values.<br>
+<strong>Coffee and Cuisine:</strong> The Big Island is home to Kona coffee, celebrated worldwide for its rich flavor. Explore coffee farms and taste freshly brewed cups. Savor local cuisine, from poi (taro paste) to poke (marinated raw fish). Food trucks and farmers’ markets offer delightful culinary experiences.</p>
+
+<h2>The Island</h2>
+<br>
+<iframe src="https://www.google.com/maps/d/u/1/embed?mid=12f57pFyGzE_8aXNSD7ITVgwVZdSGDnc&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+
+<br><br>
+<div class="w3-container">
+  
+  <button id="Chat" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Island of Hawai`i</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>The island of Hawai  i, often referred to as the Big Island, is divided into several distinct regions, each with its own unique characteristics and attractions.</p>
+        <div class="chat-container">
+    <div class="chat-log">
+      <!-- chat messages will be displayed here -->
+    </div>
+    <div class="chat-input">
+      <input id="user-input" type="text" placeholder="Type a message...">
+      <br>
+      <br>
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chatLog = document.querySelector('.chat-log');
+    const userInput = document.querySelector('#user-input');
+    const sendBtn = document.querySelector('#send-btn');
+
+    sendBtn.addEventListener('click', () => {
+      const userInputValue = userInput.value.trim();
+      if (userInputValue !== '') {
+        // Add user message to chat log
+        const userMessage = document.createElement('div');
+        userMessage.className = 'chat-message user';
+        userMessage.innerHTML = `<p>${userInputValue}</p>`;
+        chatLog.appendChild(userMessage);
+
+        // Get response from chatbot
+        const response = getResponse(userInputValue);
+
+        // Add chatbot response to chat log
+        const chatbotMessage = document.createElement('div');
+        chatbotMessage.className = 'chat-message assistant';
+        chatbotMessage.innerHTML = `<p>${response}</p>`;
+        chatLog.appendChild(chatbotMessage);
+
+        userInput.value = '';
+      }
+    });
+
+    function getResponse(userInput) {
+      const responses = {
+        'hello': 'Hi! How can I assist you today?',
+        'hi': 'Hello! What brings you here?',
+        'help': 'I\'d be happy to help you with any questions or issues you have.',
+        'default': 'I didn\'t understand that. Can you please rephrase? Or Please choose an Island: Island of Hawai`i, Maui, Kaho`olawe, Lāna`i, Moloka`i, O`ahu, Kaua`i, or Ni`ihau',
+        'me': 'Please contact (626)-223-0850',
+        'island of hawai`i': 'Please Choose a Region: Kona, Hilo, Hāmākua, Puna, Kaʻū, or Kohala',
+        'kona': 'Description: Known for its sunny weather, beautiful beaches, and coffee plantations. Kona is a major tourist hub and offers a range of activities from snorkeling and diving to exploring historic sites.',
+        'puna' : 'Description: Characterized by its lush rainforests, volcanic landscapes, and geothermal activity. Puna is less developed compared to other regions, offering a more rugged and natural experience',
+        'hilo' : 'Description: The largest city on the Big Island and the county seat of Hawaii County. Hilo is known for its vibrant downtown, scenic beauty, and frequent rainfall, which contributes to its lush vegetation.',
+        'kohala' : 'Description: Known for its upscale resorts, historic sites, and stunning landscapes. Kohala is one of the oldest parts of the island and offers a mix of natural beauty and luxury amenities.',
+        'hamakua' : 'Description: Characterized by dramatic cliffs, waterfalls, and lush vegetation. Hāmākua is known for its natural beauty and agricultural heritage',
+        'ka`u' : 'Description: Characterized by its lush rainforests, volcanic landscapes, and geothermal activity. Puna is less developed compared to other regions, offering a more rugged and natural experience',
+  
+      };
+
+      const userInputLowercase = userInput.toLowerCase();
+      for (const key in responses) {
+        if (userInputLowercase.includes(key)) {
+          return responses[key];
+        }
+      }
+      return responses['default'];
+    }
+  </script>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+  <!-- <div id="London" class="w3-container city">
+   <h1>Kona</h1>
+   <p><strong>Location:</strong> The western coast of the Big Island.
+<strong><br>Description: </strong>Known for its sunny weather, beautiful beaches, and coffee plantations. Kona is a major tourist hub and offers a range of activities from snorkeling and diving to exploring historic sites.<br>----------
+<strong><br>Key Attractions:<br>----------</strong>
+<strong><br>Kona Coffee Farms:</strong> Tours and tastings of Kona’s world-famous coffee.
+<strong><br>Kailua-Kona: </strong> A historic town with shopping, dining, and cultural sites.
+<strong><br>Huliheʻe Palace:</strong> A former royal vacation home turned museum.
+</p>
+  </div>
+
+  <div id="Paris" class="w3-container city">
+   <h1>Hilo</h1>
+   <p><strong>Location:</strong> The eastern coast of the Big Island.
+<br><strong>Description:</strong> The largest city on the Big Island and the county seat of Hawaii County. Hilo is known for its vibrant downtown, scenic beauty, and frequent rainfall, which contributes to its lush vegetation.<br>----------
+<br><strong>Key Attractions:</strong><br>----------
+<br><strong>Hilo Farmers Market:</strong> A popular spot for fresh produce, crafts, and local goods.
+<strong>Rainbow Falls:</strong> A picturesque waterfall located near Hilo.
+<strong>Liliʻuokalani Gardens:</strong> A beautiful Japanese-style garden with serene ponds and walking paths.</p> -->
+   
+  <!-- </div>
+
+  <div id="Paris" class="w3-container city">
+   <h1></h1>
+   <p>Paris is the capital of France.</p>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+   
+  </div> -->
+<!-- 
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-border-black", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-black";
+}
+</script>
+  </div>
+
+  
+
+
+  <div class="w3-container w3-light-grey w3-padding">
+   <button class="w3-button w3-right w3-white w3-border" 
+   onclick="document.getElementById('id01').style.display='none'">Close</button>
+  </div>
+ </div> -->
+<!-- </div> -->
+
+</div>
+</div>
+<script>
+document.getElementsByClassName("tablink")[0].click();
+
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("w3-light-grey");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.classList.add("w3-light-grey");
+}
+</script>
+<div class="w3-container">
+  <h2>Activities</h2>
+  
+</div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="https://www.hawaiibeaches.com/wp-content/uploads/sites/3/2022/07/End-of-the-World-Keauhou-Kona-22-1-bds-1-Large-1600x1072.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    The End of the World
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://www.travelandleisure.com/thmb/yiDV2Bl-Fj4Dk3aYyNOM3Af6fO0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/waikiki-besthawaii0216-ba6112c51f8e45f28abf6134f368b12d.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Waikiki Beach, Oahu
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://www.travelandleisure.com/thmb/pa9d4R_vKoNP0RTuGYjKyMv062M=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Ko-Olina-Oahu-besthawaii0216-101c4a5f57b14baa8ace405ba603bfdc.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Ko Olina Beach, Oahu
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://www.travelandleisure.com/thmb/yDJINmrdpYSd_yv-Tp6FBT5eTbk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/polihale-besthawaii0216-e23f9992c931491cb920fe7325fed9cc.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Polihale State Park, Kauai
+
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://www.travelandleisure.com/thmb/U41fQn9_9pHaxwyR9S5DCpo-EQE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/hanalei-bay-besthawaii0216-9dae7b3f12ce4daa8b15cc2241794b2c.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Hanalei Bay, Kauai
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br>
+
+</body>
+</html>

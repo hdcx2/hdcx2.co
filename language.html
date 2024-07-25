@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Language: The Heartbeat of Culture</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julee&family=Macondo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  .work{
+  flex-direction: row;
+}
+.color {
+  width: 94%;
+  display: flex;
+  
+  float: left;
+  flex-wrap: wrap;
+  background-color: #384133;
+}
+#ohana{
+  background-color: white;
+  width: 80px;
+  height: 90px;
+  float: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  border-radius: 0px 0px 0px 20px;
+  border: 2px solid;
+
+
+}
+#pine {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border:none;
+}
+
+.primary {
+  background-color: #C3E2B4;
+  width: 80%;
+  border-radius: 10px 0px 10px 0px;
+  border: 5px double #82A075;
+}
+h1 {
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Grandstander", cursive;
+
+}
+p {
+    font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+
+}
+.center {
+   font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+  background-color: #ECF5E8;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background: #404040;  */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+    
+}
+img {
+  border: 3px double; #5D6858;
+  border-radius: 15px 0 15px 0;
+}
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
+
+
+}
+/*.title {
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}
+.title h1{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    padding: 10px;
+    margin-right: auto;
+}
+.title p{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 80%;
+  margin-left: 8%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}*/
+#wbg {
+  background-color: #384133;
+}
+.mar {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<button class="w3-button w3-large" style="position: absolute; top: 0; left: 0;" onclick="w3_open()">&#9776;</button>
+<div class="work"style="margin-left:3%">
+<div class="w3-container">
+<a href=""><img src="img/turtle.jpg" style="margin-right: 3px;" id="ohana"></a>
+<div class="color" >
+  
+  <div class="w3-bar w3-black " id="wbg" >
+      
+
+      <a href="index.html" class="w3-bar-item w3-button"><img src="img/pine.jpg" id="pine"></a>
+    <a href="culture.html" class="w3-bar-item w3-button">Culture</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Islands <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="islandofhawaii.html" class="w3-bar-item w3-button">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button">Maui</a>
+        <a href="#" class="w3-bar-item w3-button">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" id="mySidebar" style="width:20%; display: none;">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  <a href="culture.html" class="w3-bar-item w3-button">Culture</a> 
+  <button class="w3-bar-item w3-button" onclick="toggleDropdown()">Hawaiian Culture
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="dropdown" class="w3-bar-block" style="display:none">
+    <a href="history.html" class="w3-bar-item w3-button">A Glimpse into History</a>
+    <a href="language.html" class="w3-bar-item w3-button">Language: The Heartbeat of Culture</a>
+    <a href="spirit.html" class="w3-bar-item w3-button">Spitirual Beliefs and Practices</a>
+    <a href="hula.html" class="w3-bar-item w3-button">The Art of Hula</a>
+    <a href="soul.html" class="w3-bar-item w3-button">Music: The Soul of the Islands</a>
+    <a href="taste.html" class="w3-bar-item w3-button">Taste of Hawaii</a>
+    <a href="festivals.html" class="w3-bar-item w3-button">Festivals</a>
+    <a href="clothing.html" class="w3-bar-item w3-button">Clothing</a>
+    <a href="core.html" class="w3-bar-item w3-button">Core Values and the Way of Life</a>
+  </div>
+  
+</div>
+
+<div style="margin-left:10%">
+
+<div class="w3-container primary">
+<h1>Language: The Heartbeat of Culture</h1>
+<p class="mar"style="margin-left:10%;">---------</p>
+
+<p class="center">
+The Hawaiian language, known as ʻŌlelo Hawaiʻi, is more than just words; it's the heartbeat of Hawaiian culture. With only 13 letters, the language has a melodic and rhythmic quality that mirrors the islands' natural beauty. <br>Phrases like <strong>"aloha"</strong> and <strong>"mahalo"</strong> carry meanings that go beyond simple greetings, reflecting the deep-seated values of love, respect, and gratitude.<br>
+In recent years, there has been a resurgence of interest in preserving the Hawaiian language, with immersion schools and media playing a significant role in its revival. Alongside ʻŌlelo Hawaiʻi, you'll also hear Hawaiian Pidgin, a creole language that evolved in the plantations and adds another layer to Hawaii's cultural mosaic. <br>
+<br><strong>Hawaiian Language Movement:</strong> There has been a strong movement to preserve and promote the Hawaiian language, including immersion schools, cultural programs, and media in Hawaiian.
+<br><br>
+<strong>Integration in Daily Life:</strong> Hawaiian words and phrases are often used in daily conversations, signs, place names, and cultural events, reflecting the islands' unique identity.
+<br>
+<strong>Aloha:</strong> Hello, goodbye, love, compassion<br>
+<strong>Mahalo:</strong> Thank you<br>
+<strong>Ohana:</strong> Family<br>
+<strong>Keiki:</strong> Child<br>
+<strong>Hale:</strong> House<br>
+<strong>Lanikai:</strong> Heavenly sea<br>
+<strong>Kai:</strong> Ocean<br>
+<strong>Wahine:</strong> Woman<br>
+<strong>Kane:</strong> Man<br>
+<strong>Honu:</strong> Turtle<br>
+<strong>Pau:</strong> Finished, done<br>
+<strong>Makai:</strong> Toward the sea<br>
+<strong>Mauka:</strong> Toward the mountains<br>
+<p class="mar" style="margin-left:10%;">---------</p>
+</p>
+
+<br><br>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("dropdown");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+</script>
+
+      <div class="w3-container title">
+  <h1 > 3 Types</h1>
+  <p><strong><i>Hawaiian</i></strong> (ʻŌlelo Hawaiʻi)<br>
+<strong>Origin:</strong> Hawaiian is a Polynesian language that originated from the Polynesian settlers of Hawaii. It is closely related to other Polynesian languages like Tahitian, Maori, and Samoan.<br>
+
+<strong>Alphabet:</strong> The Hawaiian language uses a 13-letter alphabet consisting of:<br><br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strong>five vowels:</strong> <i>(A, E, I, O, U)<i> <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <strong>eight consonants:</strong> <i>(H, K, L, M, N, P, W, and ʻ [okina])</i>.<br><br> The okina represents a glottal stop, which is a significant phonetic component of the language.<br>
+
+<strong>Pronunciation:</strong> Hawaiian pronunciation is rhythmic, with a strong emphasis on vowels. Each letter is pronounced, and words often have a melodic quality.<br>
+
+<strong>Vocabulary:</strong> Many Hawaiian words are descriptive of natural elements, places, and cultural concepts. Words like "aloha" (love, compassion), "mahalo" (thank you), and "ohana" (family) are well-known outside Hawaii.
+<br>
+<strong>Revitalization:</strong> The Hawaiian language faced decline after the 19th century due to the influence of English, but revitalization efforts began in the 1970s. Today, Hawaiian is taught in schools, used in media, and celebrated in cultural events.
+<br><br>
+<strong><i>English</i></strong><br>
+<strong>Usage:</strong> English is the most widely spoken language in Hawaii and is used in government, education, business, and daily communication.<br>
+
+<strong>Influence:</strong> English has influenced Hawaiian, and many Hawaiian words have been incorporated into English usage in Hawaii.<br><br>
+
+<strong><i>Hawaiian Pidgin</i></strong> (Hawaii Creole English)
+<br><strong>Origin:</strong> Hawaiian Pidgin developed as a creole language during the 19th and early 20th centuries on sugar plantations, where workers from different linguistic backgrounds needed a common language.
+<br>
+<strong>Structure:</strong> Pidgin incorporates elements from Hawaiian, English, Japanese, Chinese, Portuguese, Filipino, and other languages. It has its own grammar and vocabulary distinct from standard English.
+<br>
+<strong>Status:</strong> While not an official language, Pidgin is widely spoken in Hawaii and is an essential part of local identity and culture.
+<br><br>
+</p>
+</div>
+</div>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://image.urlaubspiraten.de/640/image/upload/v1603289825/mediavault_images/vsatguibqj5ggs5eewcr.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/enchanting/q_70,f_auto,c_fill,g_face/hj-web/2022/08/hawaii-oahu-island.png" style="width:100%">
+  <img class="mySlides" src="https://cloudinary.fclmedia.com/fctg/image/fetch/w_1600,c_fill,q_auto,g_auto,fl_progressive/https://cloudinary.fclmedia.com/fctg/image/fetch/q_80,w_600,g_auto,c_fill,f_jpg,fl_progressive/https://smartcdn.dam.gettyimages.com/EZ72ETKZ/at/wfh2zg7kvb934qhmsrfjfv8/Hawaii-Feature-_Waterfall.jpg" style="width:100%">
+  <img class="mySlides" src="https://res.cloudinary.com/simpleview/image/upload/v1600126686/clients/hawaii/Photo_Feb_24_3_23_03_PM_c1bb62b6-c14e-4a6c-a3ec-db0dfcfff686.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+<br><br>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Taste of Hawai`i</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Julee&family=Macondo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  .work{
+  flex-direction: row;
+}
+.color {
+  width: 94%;
+  display: flex;
+  
+  float: left;
+  flex-wrap: wrap;
+  background-color: #384133;
+}
+#ohana{
+  background-color: white;
+  width: 80px;
+  height: 90px;
+  float: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;
+  border-radius: 0px 0px 0px 20px;
+  border: 2px solid;
+
+
+}
+#pine {
+  width: 25px;
+  height: 25px;
+  display: block;
+  border:none;
+}
+
+.primary {
+  background-color: #C3E2B4;
+  width: 80%;
+  border-radius: 10px 0px 10px 0px;
+  border: 5px double #82A075;
+}
+h1 {
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Grandstander", cursive;
+
+}
+p {
+    font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+
+}
+.center {
+   font-family: "Kalam", cursive;
+    width: 75%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+  background-color: #ECF5E8;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* background: #404040;  */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+    
+}
+img {
+  border: 3px double; #5D6858;
+  border-radius: 15px 0 15px 0;
+}
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
+
+
+}
+/*.title {
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}
+.title h1{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 60%;
+  margin-left: 15%;
+    padding: 10px;
+    margin-right: auto;
+}
+.title p{
+  text-align: center;
+   font-family: "Kalam", cursive;
+    width: 80%;
+  margin-left: 8%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: auto;
+}*/
+#wbg {
+  background-color: #384133;
+}
+.mar {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<button class="w3-button w3-large" style="position: absolute; top: 0; left: 0;" onclick="w3_open()">&#9776;</button>
+<div class="work"style="margin-left:3%">
+<div class="w3-container">
+<a href=""><img src="img/turtle.jpg" style="margin-right: 3px;" id="ohana"></a>
+<div class="color" >
+  
+  <div class="w3-bar w3-black " id="wbg" >
+      
+
+      <a href="index.html" class="w3-bar-item w3-button"><img src="img/pine.jpg" id="pine"></a>
+    <a href="culture.html" class="w3-bar-item w3-button">Culture</a>
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        Islands <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+        <a href="islandofhawaii.html" class="w3-bar-item w3-button">Island of Hawai'i</a>
+        <a href="#" class="w3-bar-item w3-button">Maui</a>
+        <a href="#" class="w3-bar-item w3-button">Kaho`olawe</a>
+        <a href="#" class="w3-bar-item w3-button">Lānaʻi</a>
+        <a href="#" class="w3-bar-item w3-button">Moloka`i</a>
+        <a href="#" class="w3-bar-item w3-button">O`ahu</a>
+        <a href="#" class="w3-bar-item w3-button">Kaua`i</a>
+        <a href="#" class="w3-bar-item w3-button">Ni`ihau</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" id="mySidebar" style="width:20%; display: none;">
+  <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+  <a href="culture.html" class="w3-bar-item w3-button">Culture</a> 
+  <button class="w3-bar-item w3-button" onclick="toggleDropdown()">Hawaiian Culture
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div id="dropdown" class="w3-bar-block" style="display:none">
+    <a href="history.html" class="w3-bar-item w3-button">A Glimpse into History</a>
+    <a href="language.html" class="w3-bar-item w3-button">Language: The Heartbeat of Culture</a>
+    <a href="spirit.html" class="w3-bar-item w3-button">Spitirual Beliefs and Practices</a>
+    <a href="hula.html" class="w3-bar-item w3-button">The Art of Hula</a>
+    <a href="soul.html" class="w3-bar-item w3-button">Music: The Soul of the Islands</a>
+    <a href="taste.html" class="w3-bar-item w3-button">Taste of Hawaii</a>
+    <a href="festivals.html" class="w3-bar-item w3-button">Festivals</a>
+    <a href="clothing.html" class="w3-bar-item w3-button">Clothing</a>
+    <a href="core.html" class="w3-bar-item w3-button">Core Values and the Way of Life</a>
+  </div>
+  
+</div>
+
+<div style="margin-left:10%">
+
+<div class="w3-container primary">
+<h1> Taste of Hawai'i</h1>
+<p class="mar"style="margin-left:10%;">---------</p>
+
+<p class="center">
+
+
+Hawaiian cuisine is a flavorful journey that reflects the islands' multicultural influences. Traditional foods like poi, made from taro root, and kalua pig, slow-cooked in an underground oven <i>(imu)</i>, offer a taste of ancient Hawaii.<br><br>
+The islands' culinary landscape has evolved to include dishes that blend flavors from various cultures. Picture yourself enjoying a bowl of poke, with fresh diced fish seasoned with soy sauce and seaweed, or indulging in a loco moco, a comforting dish of rice topped with a hamburger patty, fried egg, and gravy. There's the beloved Spam musubi, a snack that perfectly captures Hawaii's eclectic taste.
+
+<br>
+
+<p class="mar" style="margin-left:10%;">---------</p>
+</p>
+
+<br><br>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("dropdown");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+</script>
+
+      <div class="w3-container title">
+  <h1 > Dishes</h1>
+  <p>
+<strong><i>Traditional Hawaiian Dishes</i></strong>
+<br><strong><i>Poi</i></strong>
+<br><strong>Description:</strong> Poi is a staple food made from taro root, which is cooked, pounded, and mixed with water to create a smooth, starchy paste.
+<br><strong>Flavor:</strong> It has a mildly sour taste, which develops as it ferments.
+<br><br><strong><i>Lū‘au</i></strong><br>
+<strong>Description:</strong> Lū‘au refers to a traditional Hawaiian feast featuring a variety of dishes, including kalua pig, poi, and lū‘au <i>(taro leaves)</i> stew.
+<br><strong>Cooking Method:</strong> Kalua pig is slow-cooked in an underground oven called an imu, which imparts a smoky flavor to the meat.
+<br><br><strong><i>Kalua Pig</i></strong>
+<br><strong>Description: </strong>Kalua pig is pork that is seasoned and cooked in an imu, a traditional Hawaiian underground oven.
+<br><strong>Flavor:</strong> The result is tender, flavorful, and slightly smoky meat.
+<br><br><strong><i>Haupia</i></strong>
+<br><strong>Description:</strong> Haupia is a traditional coconut milk-based dessert that is often served as a pudding or in pie form.
+<br><strong>Texture:</strong> It has a smooth, creamy texture and a subtle coconut flavor.
+<br><br><strong><i>Lomi Lomi Salmon</i></strong>
+<br><strong>Description: </strong>This dish features salted salmon that is diced and mixed with tomatoes, onions, and sometimes peppers.
+<br><strong>Flavor:</strong> It is typically served chilled and has a tangy, salty taste with fresh vegetables.
+<br><br><strong> <i>Poke</i></strong>
+<br><strong>Description: </strong>Poke is a popular Hawaiian dish made from raw fish, typically tuna, that is marinated in a mixture of soy sauce, sesame oil, and other seasonings.
+<br><strong>Variations: </strong>It can include various toppings such as seaweed, onions, and avocado.
+<br><br><strong><i>Modern Hawaiian Dishes</i></strong><br>
+<br><strong><i> Plate Lunch</i></strong>
+<br><strong>Description:</strong> A plate lunch is a popular Hawaiian meal that typically includes a protein <i>(such as teriyaki chicken, kalbi beef, or fried fish)</i>, two scoops of rice, and a scoop of macaroni salad.
+<br><strong>Influences:</strong> It reflects a blend of Hawaiian, Asian, and American culinary traditions.<br>
+<br><strong><i>Spam Musubi</i></strong>
+<br><strong>Description: </strong>Spam musubi is a sushi-like snack made with a slice of Spam, rice, and seaweed.
+<br><strong>Flavor:</strong> It combines the salty, savory taste of Spam with the slightly sweet flavor of sushi rice.
+<br><br><strong><i> Saimin</i></strong>
+<br><strong>Description:</strong> Saimin is a noodle soup that originated from a blend of Chinese, Japanese, and Filipino culinary influences.
+Ingredients: It includes wheat noodles, broth, and toppings such as pork, green onions, and kamaboko <i>(fish cake)</i>.
+<br><br><strong>Macaroni Salad</strong>
+<br><strong>Description:</strong> A side dish made with macaroni pasta, mayonnaise, and a mix of vegetables, often served with plate lunches.
+<br><strong>Flavor:</strong> It’s creamy and slightly tangy, often with a touch of sweetness
+<br><br>
+</p>
+</div>
+</div>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://i0.wp.com/makeitglutenfree.com/wp-content/uploads/2020/08/Spam-Musubi.jpg?fit=1249%2C937&ssl=1" style="width:100%">
+  <img class="mySlides" src="https://images.sbs.com.au/dims4/default/88c85c7/2147483647/strip/true/crop/1000x563+0+589/resize/1280x720!/quality/90/?url=http%3A%2F%2Fsbs-au-brightspot.s3.amazonaws.com%2Fdrupal%2Ffood%2Fpublic%2FSaimin.jpg" style="width:100%">
+  <img class="mySlides" src="https://www.thekitchenmagpie.com/wp-content/uploads/images/2019/06/KaluaPork1.jpg" style="width:100%">
+  <img class="mySlides" src="https://playswellwithbutter.com/wp-content/uploads/2022/12/Shoyu-Ahi-Poke-Hawaiian-Tuna-Poke-9.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+<br><br>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
